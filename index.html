@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/sytle.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,31 +19,31 @@
   <body>
     <header>
       <p class="logo">WebStudio</p>
-      <nav>
-        <ul class="top-line">
+      <nav class="nav">
+        <ul>
           <li><a href="#Our_Team">Studio</a></li>
-          <li><a href="#what_we_do">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="#address">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="link-mail">
+      <ul class="mail-phone">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+1212772415">+1 212-772-4150</a></li>
       </ul>
     </header>
 
     <main>
-      <div class="title">
-        <h1 class="page_title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+      <div class="page-title">
+        <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
         <button class="button" type="button" inputmode="#address">
           Request our service
         </button>
       </div>
 
       <div>
-        <ul>
+        <ul class="ul1">
           <li>
-            <p id="ATTENTION_TO_DETAILS">ATTENTION TO DETAILS</p>
+            <h3>ATTENTION TO DETAILS</h3>
             <p>
               We go into all the details and processes of your business to
               develop a customized solution.
@@ -45,7 +51,7 @@
           </li>
 
           <li>
-            <p id="PUNCTUALITY">PUNCTUALITY</p>
+            <h3>PUNCTUALITY</h3>
             <p>
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and respect the agreed deadlines.
@@ -53,7 +59,7 @@
           </li>
 
           <li>
-            <p id="PLANNING">PLANNING</p>
+            <h3>LANNING</h3>
             <p>
               You will be able to observe and participate in every phase of
               solution development and implementation.
@@ -61,7 +67,7 @@
           </li>
 
           <li>
-            <p id="MODERN_TECHNOLOGIES">MODERN TECHNOLOGIES</p>
+            <h3>MODERN TECHNOLOGIES</h3>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.our
@@ -69,8 +75,8 @@
           </li>
         </ul>
       </div>
-      <h2>What we do</h2>
-      <ul>
+      <h2 class="h2">What we do</h2>
+      <ul class="pictures">
         <li>
           <img
             src="./images/img1.jpg"
@@ -97,8 +103,8 @@
         </li>
       </ul>
 
-      <h2>Our Team</h2>
-      <ul>
+      <h2 class="h2">Our Team</h2>
+      <ul class="ul1">
         <li>
           <figure>
             <img
@@ -107,7 +113,9 @@
               width="270"
               height="260"
             />
-            <figcaption>Christopher Walker Product Designer</figcaption>
+            <figcaption>
+              Christopher Walker <span class="job"> Product Designer</span>
+            </figcaption>
           </figure>
         </li>
         <li>
@@ -118,7 +126,9 @@
               width="270"
               height="260"
             />
-            <figcaption>Kylie Evans Frontend Developer</figcaption>
+            <figcaption>
+              Kylie Evans <span class="job"> Developer</span>
+            </figcaption>
           </figure>
         </li>
         <li>
@@ -129,7 +139,9 @@
               width="270"
               height="260"
             />
-            <figcaption>Ryan Harris Marketing</figcaption>
+            <figcaption>
+              Ryan Harris <span class="job">Marketing</span>
+            </figcaption>
           </figure>
         </li>
         <li>
@@ -140,19 +152,23 @@
               width="270"
               height="260"
             />
-            <figcaption>Tyler Moore UI Designer</figcaption>
+            <figcaption>
+              Tyler Moore <span class="job"> UI Designer</span>
+            </figcaption>
           </figure>
         </li>
       </ul>
     </main>
     <footer>
-      <p class="logo">WebStudio</p>
-      <address id="address">
+      <p class="logo footer-logo">WebStudio</p>
+      <address class="address">
         695 Park Ave, New York, NY 10065, <br />
         United States <br />
       </address>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+1212772415">+1 212-772-4150</a>
+      <ul class="mail-phone">
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+1212772415">+1 212-772-4150</a></li>
+      </ul>
     </footer>
   </body>
 </html>
