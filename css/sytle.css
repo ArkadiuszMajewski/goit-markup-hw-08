@@ -1,6 +1,7 @@
 :root {
   background-color: #e5e5e5;
   --brand-color: #2196f3;
+  --activr-color: #220086;
 }
 body {
   background-color: #ffffff;
@@ -34,6 +35,7 @@ body {
 }
 .nav a:active {
   font-weight: 900;
+  color: var(--activr-color);
 }
 
 .mail-phone a {
@@ -51,6 +53,7 @@ body {
 }
 .mail-phone a:active {
   font-weight: 900;
+  color: black;
 }
 .mail-phone a:focus {
   color: var(--brand-color);
@@ -82,6 +85,12 @@ body {
   font-style: bold;
   font-weight: 700;
   letter-spacing: 1px;
+}
+.button-main:active {
+  color: var(--activr-color);
+}
+.button-main:focus {
+  color: black;
 }
 .ul1 {
   font-family: "Roboto";
@@ -126,6 +135,14 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.address {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
+}
 .button-portfolio {
   font-family: "Roboto";
   color: #212121;
@@ -139,6 +156,10 @@ body {
 .button-portfolio:hover {
   background-color: var(--brand-color);
   color: #ffffff;
+}
+.button-portfolio:active {
+  font-weight: 700;
+  color: var(--activr-color);
 }
 .pictures-portfolio figcaption {
   font-family: "Roboto";
