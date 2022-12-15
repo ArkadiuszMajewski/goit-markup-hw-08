@@ -57,7 +57,6 @@ body {
 }
 
 .page-title {
-  font-family: "roboto";
   background-color: #2f303a;
 }
 .page-title .title {
@@ -124,7 +123,8 @@ body {
   line-height: 19px;
   font-weight: 500;
 }
-
+.footer {
+}
 .button-portfolio {
   font-family: "Roboto";
   color: #212121;
@@ -134,7 +134,6 @@ body {
   font-weight: 500;
   border: white;
   border-radius: 4px;
-  display: flex;
 }
 .button-portfolio:hover {
   background-color: var(--brand-color);
