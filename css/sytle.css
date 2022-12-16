@@ -13,8 +13,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: normal;
-  line-height: 100%;
-  letter-spacing: normal;
+  line-height: 1.38;
+
   color: var(--brand-color);
 }
 .nav a {
@@ -22,7 +22,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
@@ -43,7 +43,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
@@ -69,7 +69,7 @@ body {
   font-style: normal;
   font-weight: 900;
   letter-spacing: normal;
-  line-height: 116%;
+  line-height: 1.36;
   letter-spacing: 2px;
 }
 .button-main {
@@ -81,7 +81,7 @@ body {
   color: #ffffff;
   font-family: "roboto";
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   font-style: bold;
   font-weight: 700;
   letter-spacing: 1px;
@@ -97,7 +97,7 @@ body {
   color: #212121;
   font-size: 14px;
   font-style: bold;
-  line-height: 16px;
+  line-height: 1.14;
   font-weight: 700;
 }
 .ul1 p {
@@ -105,7 +105,7 @@ body {
   color: #757575;
   font-size: 14px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.71;
   font-weight: 400;
 }
 .h2 {
@@ -113,7 +113,7 @@ body {
   color: #212121;
   font-size: 36px;
   font-style: bold;
-  line-height: 46px;
+  line-height: 1.27;
   font-weight: 700;
 }
 .ul1 figcaption {
@@ -121,7 +121,7 @@ body {
   color: #212121;
   font-size: 16px;
   font-style: normal;
-  line-height: 19px;
+  line-height: 1.18;
   font-weight: 500;
 }
 .ul1 .job {
@@ -129,7 +129,7 @@ body {
   color: #757575;
   font-size: 16px;
   font-style: normal;
-  line-height: 19px;
+  line-height: 1.18;
   font-weight: 500;
 }
 .footer {
@@ -140,7 +140,7 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.71;
   font-weight: 400;
 }
 .button-portfolio {
@@ -148,7 +148,7 @@ body {
   color: #212121;
   font-size: 16px;
   font-style: normal;
-  line-height: 26px;
+  line-height: 1.62;
   font-weight: 500;
   border: white;
   border-radius: 4px;
@@ -166,7 +166,7 @@ body {
   color: #212121;
   font-size: 18px;
   font-style: bold;
-  line-height: 36px;
+  line-height: 2;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -175,6 +175,6 @@ body {
   color: #757575;
   font-size: 16px;
   font-style: normal;
-  line-height: 30px;
+  line-height: 1.87;
   font-weight: 700;
 }
