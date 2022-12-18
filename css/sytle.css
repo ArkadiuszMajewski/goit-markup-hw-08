@@ -4,6 +4,7 @@
   --activr-color: #220086;
 }
 body {
+  margin: 0cm;
   background-color: #ffffff;
 }
 .logo {
@@ -12,8 +13,8 @@ body {
   font-size: 26px;
   letter-spacing: normal;
   line-height: 1.38;
-
   color: var(--brand-color);
+  margin: 0cm;
 }
 .nav a {
   font-family: "Roboto";
