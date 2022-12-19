@@ -17,10 +17,12 @@ body {
   color: var(--brand-color);
   margin: 0cm;
 }
-.logob-lack {
+.logob-black {
   color: #212121;
 }
-
+.logob-white {
+  color: #e5e5e5;
+}
 .nav a {
   font-weight: 500;
   font-size: 14px;
@@ -131,6 +133,8 @@ body {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
+  font-weight: 400;
 }
 .button-portfolio {
   color: #212121;
