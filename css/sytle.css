@@ -2,6 +2,7 @@
   background-color: #e5e5e5;
   --brand-color: #2196f3;
   --activr-color: #220086;
+  font-family: "Roboto";
 }
 body {
   margin: 0cm;
@@ -17,7 +18,6 @@ body {
   margin: 0cm;
 }
 .nav a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -37,7 +37,6 @@ body {
 }
 
 .mail-phone a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,7 +64,6 @@ body {
 .page-title .title {
   font-size: 44px;
   color: white;
-  font-family: "Roboto";
   font-weight: 900;
   letter-spacing: normal;
   line-height: 1.36;
@@ -78,12 +76,12 @@ body {
   border-radius: 4px;
   border-color: #2f303a;
   color: #ffffff;
-  font-family: "roboto";
   font-size: 16px;
   line-height: 1.87;
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
+  font-family: "Roboto";
 }
 
 .button-main:active {
@@ -93,34 +91,29 @@ body {
   color: black;
 }
 .article-main {
-  font-family: "Roboto";
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
 }
 .article-main p {
-  font-family: "Roboto";
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
 }
 .sub-title {
-  font-family: "Roboto";
   color: #212121;
   font-size: 36px;
   line-height: 1.27;
   font-weight: 700;
 }
 .ul1 figcaption {
-  font-family: "Roboto";
   color: #212121;
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
 }
 .ul1 .job {
-  font-family: "Roboto";
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
@@ -131,13 +124,11 @@ body {
   margin: 0px;
 }
 .address {
-  font-family: "Roboto";
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
 }
 .button-portfolio {
-  font-family: "Roboto";
   color: #212121;
   font-size: 16px;
   line-height: 1.62;
@@ -145,6 +136,7 @@ body {
   border: white;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Roboto";
 }
 .button-portfolio:hover {
   background-color: var(--brand-color);
@@ -155,7 +147,6 @@ body {
   color: var(--activr-color);
 }
 .pictures-portfolio figcaption {
-  font-family: "Roboto";
   color: #212121;
   font-size: 18px;
   line-height: 2;
@@ -163,7 +154,6 @@ body {
   letter-spacing: 1px;
 }
 .pictures-portfolio figcaption p {
-  font-family: "Roboto";
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
