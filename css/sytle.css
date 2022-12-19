@@ -17,6 +17,10 @@ body {
   color: var(--brand-color);
   margin: 0cm;
 }
+.logob-lack {
+  color: #212121;
+}
+
 .nav a {
   font-weight: 500;
   font-size: 14px;
