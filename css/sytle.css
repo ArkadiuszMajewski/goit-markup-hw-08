@@ -2,11 +2,11 @@
   background-color: #e5e5e5;
   --brand-color: #2196f3;
   --activr-color: #220086;
-  font-family: "Roboto";
 }
 body {
   margin: 0cm;
   background-color: #ffffff;
+  font-family: "Roboto";
 }
 .logo {
   font-family: "Raleway";
