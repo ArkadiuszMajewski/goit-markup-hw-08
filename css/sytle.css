@@ -6,10 +6,11 @@ body {
   margin: 0cm;
   background-color: #ffffff;
   font-family: "Roboto";
+  width: 1600px;
 }
 .header {
   height: 80px;
-  width: 1600px;
+
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
@@ -22,7 +23,7 @@ body {
   letter-spacing: normal;
   line-height: 1.38;
   color: var(--brand-color);
-  margin-left: 215px;
+
   display: block;
 }
 .logob-black {
@@ -30,6 +31,13 @@ body {
 }
 .logob-white {
   color: #e5e5e5;
+}
+.logo-header {
+  margin-left: 215px;
+}
+.logo-footer {
+  padding: 60px 0px 0px 215px;
+  margin: 0px;
 }
 .nav a {
   font-weight: 500;
@@ -57,6 +65,18 @@ body {
   color: var(--activr-color);
 }
 
+.mail-phone-header a {
+  padding: 25px;
+}
+.mail-phone-header {
+  display: flex;
+  margin: 0 0 0 346px;
+}
+.mail-phone-footer {
+  padding: 9px 0px 0px 215px;
+  margin: 0px;
+}
+
 .mail-phone a {
   font-weight: 500;
   font-size: 14px;
@@ -64,12 +84,9 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
-  padding: 25px;
 }
 .mail-phone {
-  margin: 0 0 0 346px;
   list-style: none;
-  display: flex;
 }
 .mail-phone a:hover {
   color: var(--brand-color);
@@ -84,7 +101,7 @@ body {
 
 .page-title {
   background-color: #2f303a;
-  width: 1600px;
+
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -124,44 +141,119 @@ body {
   color: black;
 }
 .article-main {
+  width: 1170px;
+  height: 101px;
+  padding: 0px;
+  margin: 94px 215px 0px 215px;
+}
+.article-main-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.sub-titleh3 {
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
+  margin: 0px 0px 50px 0px;
+  padding: 0px;
 }
-.article-main p {
+.article-main-list p {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+  padding: 0px;
 }
-.sub-title {
+
+.sub-title1 {
   color: #212121;
   font-size: 36px;
   line-height: 1.27;
   font-weight: 700;
+  margin: 0px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.div-pictures {
+  width: 1170px;
+  height: 386px;
+  margin: 94px 215px 0px 215px;
+}
+
+.pictures {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.section-naszzespol {
+  height: 648px;
+  margin-top: 94px;
+  padding: 0px;
+  background-color: #f5f4fa;
+}
+.sub-title2 {
+  color: #212121;
+  font-size: 36px;
+  line-height: 1.27;
+  font-weight: 700;
+  margin: 0px;
+  padding-top: 94px;
+  text-align: center;
+}
+.fig-zespol {
+  width: 270px;
+  height: 368px;
+  margin: 50px 15px 0px 15px;
+  padding: 0px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.ul1 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .ul1 figcaption {
   color: #212121;
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+  margin: 30px auto;
+  padding: 0px;
+  text-align: center;
 }
 .ul1 .job {
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+  margin-top: 0px;
+  padding: 0px;
 }
 .footer {
   background-color: #2f303a;
+  height: 252px;
   margin: 0px;
+  text-align: left;
 }
+
 .address {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   font-weight: 400;
+  padding: 20px 0px 0px 215px;
+  margin: 0px;
 }
 .button-portfolio {
   color: #212121;
