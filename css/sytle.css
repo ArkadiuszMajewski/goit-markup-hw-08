@@ -7,6 +7,14 @@ body {
   background-color: #ffffff;
   font-family: "Roboto";
 }
+.header {
+  height: 80px;
+  width: 1600px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -14,7 +22,8 @@ body {
   letter-spacing: normal;
   line-height: 1.38;
   color: var(--brand-color);
-  margin: 0cm;
+  margin-left: 215px;
+  display: block;
 }
 .logob-black {
   color: #212121;
@@ -29,6 +38,13 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  padding: 23px;
+  display: flex;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 70px;
 }
 .nav a:hover {
   color: var(--brand-color);
@@ -48,9 +64,12 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  padding: 25px;
 }
 .mail-phone {
-  margin: 0cm;
+  margin: 0 0 0 346px;
+  list-style: none;
+  display: flex;
 }
 .mail-phone a:hover {
   color: var(--brand-color);
@@ -65,6 +84,12 @@ body {
 
 .page-title {
   background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .page-title .title {
   font-size: 44px;
@@ -73,6 +98,8 @@ body {
   letter-spacing: normal;
   line-height: 1.36;
   letter-spacing: 2px;
+  margin: 0px;
+  text-align: center;
 }
 .button-main {
   background-color: var(--brand-color);
@@ -87,6 +114,7 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   font-family: "Roboto";
+  margin: 40px;
 }
 
 .button-main:active {
