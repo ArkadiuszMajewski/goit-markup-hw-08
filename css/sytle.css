@@ -23,8 +23,6 @@ body {
   letter-spacing: normal;
   line-height: 1.38;
   color: var(--brand-color);
-
-  display: block;
 }
 .logob-black {
   color: #212121;
@@ -71,10 +69,27 @@ body {
 .mail-phone-header {
   display: flex;
   margin: 0 0 0 346px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
 }
-.mail-phone-footer {
+.mail-phone-footer a {
+  display: block;
   padding: 9px 0px 0px 215px;
   margin: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
 }
 
 .mail-phone a {
@@ -243,7 +258,9 @@ body {
   background-color: #2f303a;
   height: 252px;
   margin: 0px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
 }
 
 .address {
