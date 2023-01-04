@@ -43,13 +43,18 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
-  padding: 23px;
+  padding: 0px;
   display: flex;
+  justify-content: center;
 }
 .nav {
   list-style: none;
   display: flex;
-  margin: 0 0 0 70px;
+  margin: 0px 0px 0px 93px;
+  padding: 0%;
+}
+.nav li:nth-child(2) {
+  padding: 0px 46px 0px 46px;
 }
 .nav a:hover {
   color: var(--brand-color);
@@ -129,10 +134,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   cursor: pointer;
   font-family: "Roboto";
-  margin: 40px;
+  margin: 30px auto 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -194,7 +199,6 @@ body {
 }
 
 .section-naszzespol {
-  height: 648px;
   margin-top: 94px;
   padding: 0px;
   background-color: #f5f4fa;
@@ -211,7 +215,7 @@ body {
 .fig-zespol {
   width: 270px;
   height: 368px;
-  margin: 50px 15px 0px 15px;
+  margin: 50px 15px 94px 15px;
   padding: 0px;
   background-color: #ffffff;
   display: flex;
