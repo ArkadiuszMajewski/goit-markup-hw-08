@@ -73,8 +73,17 @@ body {
   margin-left: 371px;
   padding: 0px;
 }
+
+.mail-phone-header li:nth-child(2) > a {
+  padding: 0px;
+}
+
 .mail-phone-header a {
   padding-right: 50px;
+}
+.mail-phone-header li:nth-child(2) {
+  padding: 0%;
+  margin: 0%;
 }
 .mail-phone-footer {
   list-style: none;
@@ -298,6 +307,9 @@ body {
   font-family: "Roboto";
   padding: 6px 22px 6px 22px;
   margin: 0px 4px 0px 4px;
+}
+.button-portfolio-ul li:last-child > button {
+  margin: 0%;
 }
 .button-portfolio:hover {
   background-color: var(--brand-color);
