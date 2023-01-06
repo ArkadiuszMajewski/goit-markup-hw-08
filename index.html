@@ -25,23 +25,25 @@
   </head>
 
   <body>
-    <header class="header">
-      <p class="logo logo-header">Web<span class="logob-black">Studio</span></p>
-      <nav>
-        <ul class="nav">
-          <li><a href="./index.html">Agencja</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#address">Kontakt</a></li>
+    <header>
+      <div class="container header">
+        <p class="logo">Web<span class="logob-black">Studio</span></p>
+        <nav>
+          <ul class="nav">
+            <li><a href="./index.html">Agencja</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="#address">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="mail-phone mail-phone-header">
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+1212772415">+48 111 111 111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="mail-phone mail-phone-header">
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+1212772415">+48 111 111 111</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
@@ -53,42 +55,40 @@
         <button class="button-main" type="button">Zamów usługe</button>
       </div>
 
-      <div class="article-main">
-        <ul class="article-main-list">
-          <li>
-            <h3 class="sub-titleh3">LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
+      <div class="container section">
+        <div class="article-main">
+          <ul>
+            <li>
+              <h3 class="sub-titleh3">LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-titleh3">LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-titleh3">LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-titleh3">LOREM IPSUM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
 
-          <li>
-            <h3 class="sub-titleh3">LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-
-          <li>
-            <h3 class="sub-titleh3">LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-
-          <li>
-            <h3 class="sub-titleh3">LOREM IPSUM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="div-pictures">
         <h2 class="sub-title1">Czym się zajmujemy</h2>
         <ul class="pictures">
           <li>
@@ -119,77 +119,82 @@
       </div>
 
       <section class="section-naszzespol">
-        <h2 class="sub-title2">Nasz zespół</h2>
-
-        <ul class="ul1">
-          <li class="fig-zespol">
-            <figure>
-              <img
-                src="./images/img4.jpg"
-                alt="photo of Christopher Walker"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                John Doe
-                <span class="job"> Product Designer</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="fig-zespol">
-            <figure>
-              <img
-                src="./images/img5.jpg"
-                alt="photo of Kylie Evans"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                John Doe
-                <span class="job"> Frontend Developer</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="fig-zespol">
-            <figure>
-              <img
-                src="./images/img6.jpg"
-                alt="photo of Ryan Harris"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                John Doe<span class="job">Marketing</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="fig-zespol">
-            <figure>
-              <img
-                src="./images/img7.jpg"
-                alt="photo of Tyler Moore"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                John Doe<span class="job"> UI Designer</span>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="container section">
+          <h2 class="sub-title2">Nasz zespół</h2>
+          <ul class="ul1">
+            <li class="fig-zespol">
+              <figure>
+                <img
+                  src="./images/img4.jpg"
+                  alt="photo of Christopher Walker"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  John Doe
+                  <span class="job"> Product Designer</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="fig-zespol">
+              <figure>
+                <img
+                  src="./images/img5.jpg"
+                  alt="photo of Kylie Evans"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  John Doe
+                  <span class="job"> Frontend Developer</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="fig-zespol">
+              <figure>
+                <img
+                  src="./images/img6.jpg"
+                  alt="photo of Ryan Harris"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  John Doe<span class="job">Marketing</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="fig-zespol">
+              <figure>
+                <img
+                  src="./images/img7.jpg"
+                  alt="photo of Tyler Moore"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  John Doe<span class="job"> UI Designer</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="logo logo-footer">Web<span class="logob-white">Studio</span></p>
-      <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <ul class="mail-phone mail-phone-footer">
-        <li>
-          <a href="mailto:info@devstudio.com">info@example.com</a>
-        </li>
-        <li>
-          <a href="tel:+1212772415">+48 111 111 111</a>
-        </li>
-      </ul>
+      <div class="container">
+        <p class="logo logo-footer">
+          Web<span class="logob-white">Studio</span>
+        </p>
+        <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <ul class="mail-phone mail-phone-footer">
+          <li>
+            <a href="mailto:info@devstudio.com">info@example.com</a>
+          </li>
+          <li>
+            <a href="tel:+1212772415">+48 111 111 111</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

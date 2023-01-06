@@ -8,11 +8,17 @@ body {
   font-family: "Roboto";
   width: 1600px;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 .header {
-  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 80px;
+}
+header {
   border-bottom: 1px solid #ececec;
 }
 .logo {
@@ -22,6 +28,7 @@ body {
   letter-spacing: normal;
   line-height: 1.38;
   color: var(--brand-color);
+  margin: 0%;
 }
 .logob-black {
   color: #212121;
@@ -29,13 +36,7 @@ body {
 .logob-white {
   color: #e5e5e5;
 }
-.logo-header {
-  margin: 0px 0px 0px 215px;
-}
-.logo-footer {
-  padding: 60px 0px 0px 215px;
-  margin: 0px;
-}
+
 .nav a {
   font-weight: 500;
   font-size: 14px;
@@ -54,7 +55,7 @@ body {
   padding: 0%;
 }
 .nav li:nth-child(2) {
-  padding: 0px 46px 0px 46px;
+  padding: 0px 46px 0px;
 }
 .nav a:hover {
   color: var(--brand-color);
@@ -87,7 +88,7 @@ body {
 }
 .mail-phone-footer {
   list-style: none;
-  margin: 0px 0px 0px 215px;
+  margin: 0px;
   padding: 0px;
 }
 .mail-phone-footer a {
@@ -156,13 +157,8 @@ body {
 .button-main:focus {
   color: black;
 }
-.article-main {
-  width: 1170px;
-  height: 101px;
-  padding: 0px;
-  margin: 94px auto 0px;
-}
-.article-main-list {
+
+.article-main ul {
   display: flex;
   margin: 0px;
   padding: 0px;
@@ -173,10 +169,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   padding: 0px;
 }
-.article-main-list p {
+.article-main p {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
@@ -188,15 +184,9 @@ body {
   font-size: 36px;
   line-height: 1.27;
   font-weight: 700;
-  margin: 0px;
-  padding-bottom: 50px;
+  padding: 94px 0px 50px 0px;
+  margin: 0%;
   text-align: center;
-}
-
-.div-pictures {
-  width: 1170px;
-  height: 386px;
-  margin: 94px 215px 0px 215px;
 }
 
 .pictures {
@@ -208,7 +198,6 @@ body {
 }
 
 .section-naszzespol {
-  margin-top: 94px;
   padding: 0px;
   background-color: #f5f4fa;
 }
@@ -218,13 +207,11 @@ body {
   line-height: 1.27;
   font-weight: 700;
   margin: 0px;
-  padding-top: 94px;
+  padding: 0%;
   text-align: center;
 }
 .fig-zespol {
-  width: 270px;
-  height: 368px;
-  margin: 50px 15px 94px 15px;
+  margin: 50px 30px 0px 0px;
   padding: 0px;
   background-color: #ffffff;
   display: flex;
@@ -232,6 +219,9 @@ body {
   align-items: flex-end;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.ul1 li:last-child {
+  margin-right: 0px;
 }
 .fig-zespol figure {
   margin: 0px;
@@ -265,9 +255,8 @@ body {
   height: 252px;
   margin: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-items: last baseline;
+  justify-items: center;
+  align-items: center;
 }
 
 .address {
@@ -276,14 +265,12 @@ body {
   line-height: 1.71;
   font-style: normal;
   font-weight: 400;
-  padding: 20px 0px 0px 215px;
+  padding: 20px 0px 0px 0px;
   margin: 0px;
   display: block;
 }
 .article-box-portfolio {
-  width: 1170px;
-  margin: 94px auto 94px;
-
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,6 +283,10 @@ body {
   padding: 0%;
   margin: 0%;
 }
+.article-box-portfolio li {
+  padding-right: 8px;
+}
+
 .button-portfolio {
   color: #212121;
   font-size: 16px;
@@ -306,11 +297,8 @@ body {
   cursor: pointer;
   font-family: "Roboto";
   padding: 6px 22px 6px 22px;
-  margin: 0px 4px 0px 4px;
 }
-.button-portfolio-ul li:last-child > button {
-  margin: 0%;
-}
+
 .button-portfolio:hover {
   background-color: var(--brand-color);
   color: #ffffff;
@@ -329,7 +317,10 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   display: block;
-  margin: 20px 0px 0px 24px;
+  padding: 20px 0px 0px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .pictures-portfolio figcaption p {
   color: #757575;
@@ -337,7 +328,8 @@ body {
   line-height: 1.87;
   font-weight: 400;
   display: block;
-  margin: 4px 0px 20px 0px;
+  padding: 4px 0px 20px 0px;
+  margin: 0%;
 }
 .pictures-portfolio {
   list-style: none;
@@ -347,9 +339,17 @@ body {
   padding: 0%;
   margin: 0px;
 }
+.pictures-portfolio li {
+  padding: 30px 0px 0px 0px;
+}
 .pictures-portfolio figure {
   margin: 0px;
-  border: 1px solid #eeeeee;
-  margin-top: 30px;
+}
+
+.pictures-portfolio img {
   display: block;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
