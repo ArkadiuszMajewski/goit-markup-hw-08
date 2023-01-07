@@ -1,0 +1,85 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-antenna-1-1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-astronaut-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-brand {
+  width: 43px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-clock {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icon-company {
+  width: 67px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icon-diagram-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-envelope {
+  width: 43px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-face {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-foster-peters {
+  width: 65px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-insta {
+  width: 32px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-Object {
+  width: 34px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-smartphone {
+  width: 20px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-twit {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-Union-1 {
+  width: 37px;
+  height: 32px;
+  background-position: -144px -48px;
+}
+.icon-Union {
+  width: 27px;
+  height: 32px;
+  background-position: -192px -48px;
+}
