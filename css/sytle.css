@@ -368,3 +368,16 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.icons-article {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.svg-article {
+  padding: 0 auto;
+}
