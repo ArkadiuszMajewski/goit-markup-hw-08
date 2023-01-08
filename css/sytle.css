@@ -407,3 +407,19 @@ header {
 .social-links {
   color: #fff;
 }
+
+.icon:hover {
+  fill: #2196f3;
+}
+.icon {
+  fill: #220086;
+}
+.companys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
