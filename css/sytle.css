@@ -236,7 +236,7 @@ header {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -250,7 +250,7 @@ header {
 .ul1 {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0px;
   margin: 0px;
 }
@@ -259,7 +259,7 @@ header {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
-  margin: 30px auto 16px;
+  margin: 30px auto 0px;
   padding: 0px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -275,9 +275,7 @@ header {
   background-color: #2f303a;
   height: 252px;
   margin: 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
 }
 
 .address {
@@ -390,7 +388,7 @@ header {
 .container-footer {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .icon-naszzespol {
@@ -400,20 +398,117 @@ header {
   text-decoration: none;
 }
 
-.social-links > a {
-  text-decoration: none;
-  fill: #220086;
+.social-links-all {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.social-links-all p {
+  padding-bottom: 20px;
+  margin: 0%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .social-links {
-  color: #fff;
+  display: flex;
+  padding: 16px 0px 30px 0px;
 }
 
-.companys {
+.icon-active:hover {
+  stroke: var(--brand-color);
+}
+
+.cocial-links-footer {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.icon-footer {
+  display: block;
+  fill: #ffffff;
+}
+.cocial-links-footer:hover {
+  background-color: var(--brand-color);
+}
+.footer-left {
+  margin-top: 60px;
+}
+.companys {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+.nasi-klienci {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.nasi-klienci p {
+  margin: 0%;
+  padding: 94px 0px 50px 0px;
+}
+.nasi-klienci ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0%;
+  justify-content: space-between;
+}
+.nasi-klienci li {
+  padding: 0px 30px 94px 0px;
+}
+.nasi-klienci li:last-child {
+  padding: 0%;
+}
+
+.companys:hover {
+  border: 1px solid var(--brand-color);
+}
+.companys-icons:hover {
+  fill: #2196f3;
+}
+.icon-nasi-klienci {
+  fill: #afb1b8;
+  display: block;
+}
+.social-links-nasi-klienci {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links-nasi-klienci:hover,
+.icon-nasi-klienci:hover {
+  background-color: var(--brand-color);
+  fill: #ffffff;
 }

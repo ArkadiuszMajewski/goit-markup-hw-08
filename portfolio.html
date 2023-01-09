@@ -27,14 +27,31 @@
             <li><a href="#address">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="mail-phone mail-phone-header">
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+1212772415">+48 111 111 111</a>
-          </li>
-        </ul>
+        <div class="mail-phone-cont">
+          <ul class="mail-phone mail-phone-header">
+            <li>
+              <a href="mailto:info@devstudio.com">
+                <svg
+                  class="icon-active"
+                  width="16"
+                  height="16"
+                  class="mail-phone-icon"
+                >
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1212772415">
+                <svg class="icon-active" width="16" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -191,19 +208,52 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p class="logo logo-footer">
-          Web<span class="logob-white">Studio</span>
-        </p>
-        <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-        <ul class="mail-phone mail-phone-footer">
-          <li>
-            <a href="mailto:info@devstudio.com">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+1212772415">+48 111 111 111</a>
-          </li>
-        </ul>
+      <div class="container container-footer">
+        <div class="footer-left">
+          <p class="logo">Web<span class="logob-white">Studio</span></p>
+          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+          <ul class="mail-phone mail-phone-footer">
+            <li>
+              <a href="mailto:info@devstudio.com">info@example.com</a>
+            </li>
+            <li>
+              <a href="tel:+1212772415">+48 111 111 111</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container social-links-all">
+          <p>Dołącz do nas</p>
+          <div class="social-links">
+            <div class="cocial-links-footer">
+              <a href="https://www.instagram.com/">
+                <svg class="icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="cocial-links-footer">
+              <a href="https://twitter.com/">
+                <svg class="icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="cocial-links-footer">
+              <a href="https://www.facebook.com/">
+                <svg class="icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="cocial-links-footer">
+              <a href="https://pl.linkedin.com/">
+                <svg class="icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
