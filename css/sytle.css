@@ -408,12 +408,6 @@ header {
   color: #fff;
 }
 
-.icon:hover {
-  fill: #2196f3;
-}
-.icon {
-  fill: #220086;
-}
 .companys {
   display: flex;
   justify-content: center;
