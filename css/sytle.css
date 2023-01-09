@@ -87,9 +87,6 @@ header {
 .mail-phone-header a {
   padding-right: 50px;
 }
-.mail-phone-icon::fill {
-  fill: red;
-}
 
 .mail-phone-footer {
   list-style: none;
