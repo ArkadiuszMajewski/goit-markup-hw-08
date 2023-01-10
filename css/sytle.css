@@ -56,8 +56,14 @@ header {
 .nav li:nth-child(2) {
   padding: 0px 46px 0px;
 }
-.nav a:hover,
+.nav a:hover {
+  color: var(--brand-color);
+}
 .nav a:focus {
+  color: var(--brand-color);
+}
+.nav a:active {
+  font-weight: 900;
   color: var(--brand-color);
 }
 
@@ -116,10 +122,11 @@ header {
 .mail-phone a:focus {
   color: var(--brand-color);
 }
-/* linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)
-), */
+
+/* background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), */
 .page-title {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
