@@ -278,7 +278,7 @@ header {
   background-color: #2f303a;
   height: 252px;
   margin: 0px;
-  display: block;
+  display: flex;
 }
 
 .address {
