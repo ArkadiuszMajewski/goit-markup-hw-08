@@ -514,13 +514,15 @@ header {
   align-items: center;
   justify-content: center;
 }
-.social-links-nasi-klienci:hover,
-.icon-nasi-klienci:hover {
+.social-links-nasi-klienci:hover {
   background-color: var(--brand-color);
   fill: #ffffff;
 }
-.social-links-nasi-klienci:active,
-.icon-nasi-klienci:active {
+.social-links-nasi-klienci:hover .icon-nasi-klienci {
+  background-color: var(--brand-color);
+  fill: #ffffff;
+}
+.social-links-nasi-klienci:active .icon-nasi-klienci:active {
   background-color: var(--brand-color);
   fill: #ffffff;
 }
