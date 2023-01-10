@@ -56,14 +56,8 @@ header {
 .nav li:nth-child(2) {
   padding: 0px 46px 0px;
 }
-.nav a:hover {
-  color: var(--brand-color);
-}
+.nav a:hover,
 .nav a:focus {
-  color: var(--brand-color);
-}
-.nav a:active {
-  font-weight: 900;
   color: var(--brand-color);
 }
 
