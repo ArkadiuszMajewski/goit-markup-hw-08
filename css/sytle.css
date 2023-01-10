@@ -77,10 +77,11 @@ header {
 }
 
 .mail-phone-header li:nth-child(2) > a {
-  padding: 0px;
+  padding-right: 0px;
 }
 .mail-phone-header li {
   display: inline-flex;
+  padding-right: 30px;
 }
 
 .mail-phone-cont {
@@ -89,9 +90,8 @@ header {
   align-items: center;
 }
 
-.mail-phone-header a {
-  padding-right: 50px;
-  padding-left: 10px;
+.mail-phone-header li a:first-child {
+  padding-right: 10px;
 }
 
 .mail-phone-footer {
@@ -136,8 +136,7 @@ header {
   max-width: 1600px;
   margin: auto;
 }
-.overlay {
-}
+
 .page-title .title {
   font-size: 44px;
   color: white;
@@ -384,7 +383,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .footer-left {
   display: block;
 }
