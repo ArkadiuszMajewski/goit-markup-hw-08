@@ -494,10 +494,6 @@ header {
 .companys:hover,
 .companys:active {
   border: 1px solid var(--brand-color);
-}
-
-.companys-icons:hover,
-.companys-icons:active {
   fill: #2196f3;
 }
 
