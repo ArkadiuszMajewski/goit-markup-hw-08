@@ -122,7 +122,6 @@ header {
 .mail-phone a:focus {
   color: var(--brand-color);
 }
-
 .page-title {
   background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
