@@ -476,7 +476,6 @@ header {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 .nasi-klienci p {
   margin: 0%;
@@ -500,6 +499,7 @@ header {
 .companys:active {
   border: 1px solid var(--brand-color);
   fill: #2196f3;
+  cursor: pointer;
 }
 
 .icon-nasi-klienci {
