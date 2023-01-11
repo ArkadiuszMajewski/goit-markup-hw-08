@@ -63,7 +63,6 @@ header {
   color: var(--brand-color);
 }
 .nav a:active {
-  font-weight: 900;
   color: var(--brand-color);
 }
 
@@ -477,6 +476,7 @@ header {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .nasi-klienci p {
   margin: 0%;
