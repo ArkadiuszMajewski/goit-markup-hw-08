@@ -73,7 +73,9 @@ header {
   margin-left: 345px;
   padding: 0px;
 }
-
+.mail-phone-header p {
+  margin: 0px;
+}
 .mail-phone-header li {
   display: inline-flex;
   padding-right: 30px;
