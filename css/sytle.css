@@ -74,12 +74,12 @@ header {
   padding: 0px;
 }
 
-.mail-phone-header li:nth-child(2) > a {
-  padding-right: 0px;
-}
 .mail-phone-header li {
   display: inline-flex;
   padding-right: 30px;
+}
+.mail-phone-header li:last-child {
+  padding: 0px;
 }
 
 .mail-phone-cont {
@@ -88,7 +88,12 @@ header {
   align-items: center;
 }
 
-.mail-phone-header li a:first-child {
+.mail-phone-header a {
+  padding-right: 0px;
+  display: flex;
+}
+
+.mail-phone-header p:first-child {
   padding-right: 10px;
 }
 
@@ -131,7 +136,6 @@ header {
   stroke: var(--brand-color);
   color: var(--brand-color);
 }
-
 .page-title {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
