@@ -82,12 +82,6 @@ header {
   padding: 0px;
 }
 
-.mail-phone-cont {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
 .mail-phone-header a {
   padding-right: 0px;
   display: flex;
@@ -95,6 +89,19 @@ header {
 
 .mail-phone-header p:first-child {
   padding-right: 10px;
+}
+.mail-phone-header li:hover a {
+  stroke: var(--brand-color);
+  color: var(--brand-color);
+}
+.mail-phone-header a:focus {
+  stroke: var(--brand-color);
+  color: var(--brand-color);
+}
+.mail-phone-cont {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .mail-phone-footer {
@@ -120,22 +127,6 @@ header {
   text-decoration: none;
 }
 
-.icon-active:hover,
-.icon-active:focus {
-  stroke: var(--brand-color);
-}
-.icon-active {
-  display: inline-flex;
-  align-items: baseline;
-}
-.mail-phone-header li:hover a {
-  stroke: var(--brand-color);
-  color: var(--brand-color);
-}
-.mail-phone-header a:focus {
-  stroke: var(--brand-color);
-  color: var(--brand-color);
-}
 .page-title {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -182,14 +173,10 @@ header {
   margin: 30px auto 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button-main:hover {
-  color: var(--activr-color);
-}
-.button-main:active {
-  color: var(--activr-color);
-}
+.button-main:hover,
+.button-main:active,
 .button-main:focus {
-  color: black;
+  color: var(--activr-color);
 }
 
 .article-main ul {
@@ -328,13 +315,7 @@ header {
   font-family: "Roboto";
   padding: 6px 22px 6px 22px;
 }
-.button-portfolio:hover {
-  background-color: var(--brand-color);
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
+.button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--brand-color);
   color: #ffffff;
@@ -342,8 +323,8 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
 .button-portfolio:active {
-  font-weight: 700;
   color: var(--activr-color);
 }
 .pictures-portfolio figcaption {
@@ -456,9 +437,7 @@ header {
 .cocial-links-footer:focus {
   background-color: var(--brand-color);
 }
-.cocial-links-footer:active {
-  background-color: var(--brand-color);
-}
+
 .footer-left {
   margin-top: 60px;
 }
