@@ -93,13 +93,14 @@ header {
   padding-right: 10px;
 }
 .mail-phone-header li:hover a {
-  stroke: var(--brand-color);
+  fill: var(--brand-color);
   color: var(--brand-color);
 }
 .mail-phone-header a:focus {
-  stroke: var(--brand-color);
+  fill: var(--brand-color);
   color: var(--brand-color);
 }
+
 .mail-phone-cont {
   display: block;
   justify-content: center;
@@ -160,11 +161,8 @@ header {
 }
 .button-main {
   background-color: var(--brand-color);
-
   height: 50px;
   width: 200px;
-  border-radius: 4px;
-  border-color: #2f303a;
   color: #ffffff;
   font-size: 16px;
   line-height: 1.87;
@@ -174,7 +172,10 @@ header {
   font-family: "Roboto";
   margin: 30px auto 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
+
 .button-main:hover,
 .button-main:active,
 .button-main:focus {
