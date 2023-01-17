@@ -6,6 +6,7 @@ body {
   margin: 0cm;
   background-color: #ffffff;
   font-family: "Roboto";
+  position: relative;
 }
 .container {
   width: 1200px;
@@ -55,15 +56,6 @@ header {
 }
 .nav li:nth-child(2) {
   padding: 0px 46px 0px;
-}
-.nav a:hover {
-  color: var(--brand-color);
-}
-.nav a:focus {
-  color: var(--brand-color);
-}
-.nav a:active {
-  color: var(--brand-color);
 }
 
 .mail-phone-header {
@@ -364,6 +356,7 @@ header {
 }
 .pictures-portfolio figure {
   margin: 0px;
+  overflow: hidden;
 }
 
 .pictures-portfolio img {
@@ -518,4 +511,91 @@ header {
 .social-links-nasi-klienci:focus .icon-nasi-klienci {
   background-color: var(--brand-color);
   fill: #ffffff;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
+}
+.pictures-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4px;
+  background-color: rgba(47, 48, 58, 0.8);
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  height: 70px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.pictures li {
+  position: relative;
+}
+.pictures-portfolio-overlay {
+  position: absolute;
+  bottom: -100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 49px 45px 49px 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #fff;
+  transition-duration: 250ms;
+}
+
+.pictures-portfolio .box {
+  position: relative;
+  overflow: hidden;
+}
+.pictures-portfolio li:first-child:hover .pictures-portfolio-overlay {
+  bottom: 0px;
+}
+.pictures-portfolio figure:first-child:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  top: 221px;
+  right: auto;
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: black;
+}
+.nav-active {
+  width: 10px;
+  height: 1px;
+  border: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+}
+.nav a:hover {
+  color: var(--brand-color);
+}
+.nav a:focus {
+  color: var(--brand-color);
+}
+.nav a:active {
+  color: var(--brand-color);
 }

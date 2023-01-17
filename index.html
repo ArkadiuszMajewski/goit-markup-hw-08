@@ -29,7 +29,10 @@
         <p class="logo">Web<span class="logob-black">Studio</span></p>
         <nav>
           <ul class="nav">
-            <li><a href="./index.html">Agencja</a></li>
+            <li>
+              <a href="./index.html">Agencja</a>
+              <div class="nav-active"></div>
+            </li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="#address">Kontakt</a></li>
           </ul>
@@ -69,7 +72,12 @@
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button class="button-main" type="button">Zamów usługe</button>
+        <button data-modal-open class="button-main" type="button">
+          Zamów usługe
+        </button>
+        <div class="modal is-hidden" data-modal>
+          <button data-modal-close>x</button>
+        </div>
       </div>
 
       <div class="container section">
@@ -135,6 +143,7 @@
               width="370"
               height="294"
             />
+            <div class="pictures-text">Aplikacje komputerowe</div>
           </li>
           <li>
             <img
@@ -143,6 +152,7 @@
               width="370"
               height="294"
             />
+            <div class="pictures-text">Aplikacje mobilne</div>
           </li>
           <li>
             <img
@@ -151,6 +161,7 @@
               width="370"
               height="294"
             />
+            <div class="pictures-text">Rozwiązania graficzne</div>
           </li>
         </ul>
       </div>
@@ -483,5 +494,11 @@
         </div>
       </div>
     </footer>
+    <button data-modal-open>open</button>
+    <div class="modal is-hidden" data-modal>
+      <button data-modal-close>x</button>
+    </div>
+    <script src="./js/modal.js"></script>
+    <div class="overlay-body"></div>
   </body>
 </html>
