@@ -47,6 +47,9 @@ header {
   padding: 0px;
   display: flex;
   justify-content: center;
+  padding: 28px 0px 29px 0px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
 }
 .nav {
   list-style: none;
@@ -554,6 +557,7 @@ header {
   letter-spacing: 0.03em;
   color: #fff;
   transition-duration: 250ms;
+  transition-property: ;
 }
 
 .pictures-portfolio .box {
@@ -592,6 +596,9 @@ header {
 }
 .nav a:hover {
   color: var(--brand-color);
+  border-bottom: 4px solid var(--brand-color);
+  border-radius: 2px;
+  border-top: 4px solid white;
 }
 .nav a:focus {
   color: var(--brand-color);
