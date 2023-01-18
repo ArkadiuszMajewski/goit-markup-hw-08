@@ -47,9 +47,10 @@ header {
   padding: 0px;
   display: flex;
   justify-content: center;
-  padding: 28px 0px 29px 0px;
+  padding: 0px;
   border-top: 4px solid white;
   border-bottom: 4px solid white;
+  position: relative;
 }
 .nav {
   list-style: none;
@@ -90,10 +91,16 @@ header {
 .mail-phone-header li:hover a {
   fill: var(--brand-color);
   color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .mail-phone-header a:focus {
   fill: var(--brand-color);
   color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .mail-phone-cont {
@@ -115,6 +122,9 @@ header {
 .mail-phone-footer a:active,
 .mail-phone-footer a:focus {
   color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .mail-phone a {
   font-weight: 500;
@@ -175,6 +185,9 @@ header {
 .button-main:active,
 .button-main:focus {
   color: var(--activr-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .article-main ul {
@@ -320,10 +333,16 @@ header {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, box-shadow;
 }
 
 .button-portfolio:active {
   color: var(--activr-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .pictures-portfolio figcaption {
   color: #212121;
@@ -359,7 +378,9 @@ header {
 }
 .pictures-portfolio figure {
   margin: 0px;
-  overflow: hidden;
+  transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pictures-portfolio img {
@@ -435,6 +456,9 @@ header {
 .cocial-links-footer:active,
 .cocial-links-footer:focus {
   background-color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .footer-left {
@@ -484,6 +508,9 @@ header {
   border: 1px solid var(--brand-color);
   fill: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, border;
 }
 
 .icon-nasi-klienci {
@@ -507,27 +534,26 @@ header {
 .social-links-nasi-klienci:focus,
 .social-links-nasi-klienci:active {
   background-color: var(--brand-color);
-  fill: #ffffff;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color;
 }
 .social-links-nasi-klienci:hover .icon-nasi-klienci,
 .social-links-nasi-klienci:active .icon-nasi-klienci,
 .social-links-nasi-klienci:focus .icon-nasi-klienci {
-  background-color: var(--brand-color);
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg, 40deg);
-}
+
 .pictures-text {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 4px;
+  bottom: 3px;
   background-color: rgba(47, 48, 58, 0.8);
   left: 0;
   right: 0;
@@ -544,7 +570,6 @@ header {
 }
 .pictures-portfolio-overlay {
   position: absolute;
-  bottom: -100%;
   background-color: rgba(33, 150, 243, 0.9);
   display: flex;
   align-items: center;
@@ -556,37 +581,21 @@ header {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #fff;
+  top: 0px;
+  transform: translateY(100%);
   transition-duration: 250ms;
-  transition-property: ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, box-shadow;
 }
 
-.pictures-portfolio .box {
-  position: relative;
-  overflow: hidden;
-}
-.pictures-portfolio li:first-child:hover .pictures-portfolio-overlay {
-  bottom: 0px;
+.pictures-portfolio figure:hover .pictures-portfolio-overlay {
+  transform: translateY(0%);
 }
 .pictures-portfolio figure:first-child:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
 }
-.modal {
-  width: 528px;
-  height: 581px;
-  top: 221px;
-  right: auto;
-  background-color: rgba(255, 255, 255, 1);
-  position: fixed;
-  z-index: 1;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  background-image: black;
-}
+
 .nav-active {
   width: 10px;
   height: 1px;
@@ -594,15 +603,78 @@ header {
   border-radius: 2px;
   position: absolute;
 }
+
+.nav a:focus,
+.nav a:active,
 .nav a:hover {
   color: var(--brand-color);
-  border-bottom: 4px solid var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.nav a::before {
+  display: none;
+  position: absolute;
+  top: 45px;
+  content: "";
+  width: 58px;
+  height: 1px;
+  border: 2px solid #2196f3;
   border-radius: 2px;
-  border-top: 4px solid white;
 }
-.nav a:focus {
-  color: var(--brand-color);
+.nav a:hover::before,
+.nav a:active::before,
+.nav a:focus::before {
+  display: block;
 }
-.nav a:active {
-  color: var(--brand-color);
+.pictures-text-box {
+  position: relative;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  overflow: hidden;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0) rotate(180deg);
+}
+.modal {
+  top: 221px;
+  width: 528px;
+  height: 581px;
+  right: auto;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  transition-property: visibility, opacity, transform, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0) rotate(180deg);
+}
+.darker {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 0ch;
+  left: 0cm;
+  background-color: rgba(0, 0, 0, 0.2);
 }
