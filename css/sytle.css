@@ -658,7 +658,7 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  z-index: 3;
+  z-index: 1;
   opacity: 1;
 }
 
