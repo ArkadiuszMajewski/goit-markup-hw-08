@@ -684,3 +684,30 @@ header {
   justify-content: center;
   margin: 8px;
 }
+.logo-link {
+  text-decoration: none;
+}
+.agencja-active a {
+  color: var(--brand-color);
+}
+.agencja-active a::after {
+  position: absolute;
+  top: 45px;
+  content: "";
+  width: 58px;
+  height: 1px;
+  border: 2px solid #2196f3;
+  border-radius: 2px;
+}
+.portfolio-active a::after {
+  position: absolute;
+  top: 45px;
+  content: "";
+  width: 58px;
+  height: 1px;
+  border: 2px solid #2196f3;
+  border-radius: 2px;
+}
+.portfolio-active a {
+  color: var(--brand-color);
+}
