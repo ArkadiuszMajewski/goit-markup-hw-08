@@ -894,3 +894,9 @@ header {
   border-radius: 4px;
   border: none;
 }
+.imie {
+  background-color: #220086;
+}
+#imie-input {
+  background-color: #2196f3;
+}
