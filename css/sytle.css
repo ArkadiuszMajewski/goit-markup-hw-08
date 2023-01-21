@@ -705,6 +705,7 @@ header {
   justify-content: flex-start;
   transform: scale(1) rotate(0deg);
   padding: 40px;
+  position: relative;
 }
 
 .is-hidden {
