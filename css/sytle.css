@@ -698,10 +698,13 @@ header {
   position: fixed;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   transform: scale(1) rotate(0deg);
+  padding: 40px;
 }
 
 .is-hidden {
@@ -724,6 +727,7 @@ header {
   display: flex;
   justify-content: center;
   opacity: 1;
+  position: relative;
 }
 
 .button-modal {
@@ -736,6 +740,9 @@ header {
   align-items: center;
   justify-content: center;
   margin: 8px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 .footer-email {
   color: #fff;
@@ -789,4 +796,101 @@ header {
   align-items: flex-end;
   padding-top: 72px;
   margin-left: 78px;
+}
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+.okno textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: black;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.okno textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input {
+  display: flex;
+  flex-direction: column;
+}
+.okno h4 {
+  color: black;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin: 0%;
+  padding-bottom: 12px;
+}
+.okno label {
+  color: rgba(117, 117, 117, 1);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-bottom: 4px;
+}
+.okno input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.okno div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 24px;
+  margin: auto;
+}
+.okno label:last-child {
+  margin: 0%;
+  padding: 0%;
+}
+.okno div input {
+  margin: 0px 8px 0px 0px;
+  padding: 0px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #212121;
+}
+.okno div label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.okno a {
+  color: var(--brand-color);
+}
+.okno button:last-child {
+  background-color: var(--brand-color);
+  height: 50px;
+  width: 200px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: "Roboto";
+  margin: 30px auto 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }

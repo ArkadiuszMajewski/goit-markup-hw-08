@@ -84,6 +84,42 @@
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </button>
+            <h4>Zostaw swoje dane w formularzu poniżej</h4>
+
+            <form
+              class="modal-input"
+              method="get"
+              name="sign-up-form"
+              autocomplete="off"
+            >
+              <label for="imie-input"> Imie</label>
+              <input id="imie-input" type="text" name="user-imie" />
+              <label for="telefon-input">Telefon</label>
+              <input id="telefon-input" type="tel" name="user-telefon" />
+              <label for="email-input">Email</label>
+              <input id="email-input" type="email" name="user-email" />
+              <label for="komentarz-input">Komentarz</label>
+              <textarea
+                name="user-komentarz"
+                id="komentarz-input"
+                cols="30"
+                rows="10"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+              <div>
+                <input
+                  id="regulamin-input"
+                  type="checkbox"
+                  name="user-regulamin"
+                  value="regulamin-accept"
+                />
+                <label for="regulamin-input"
+                  >Oświadczam iż akceptuję <a href="">Regulamin</a> i
+                  <a href=""> Politykę Prywatności. </a>
+                </label>
+              </div>
+              <button>Wyślij</button>
+            </form>
           </div>
         </div>
       </div>
