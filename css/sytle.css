@@ -83,6 +83,7 @@ header {
 .mail-phone-header a {
   padding-right: 0px;
   display: flex;
+  fill: #757575;
 }
 
 .mail-phone-header p:first-child {
@@ -404,7 +405,7 @@ header {
 }
 .container-footer {
   display: flex;
-  justify-content: flex-start;
+
   align-items: flex-start;
 }
 
@@ -423,6 +424,7 @@ header {
   margin-top: 70px;
 }
 .social-links-all p {
+  width: 200px;
   padding-bottom: 20px;
   margin: 0%;
   font-family: "Roboto";
@@ -432,6 +434,7 @@ header {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: block;
 }
 .social-links {
   display: flex;
@@ -664,7 +667,9 @@ header {
 .portfolio-active a {
   color: var(--brand-color);
 }
-
+.x-modal {
+  fill: black;
+}
 .okno {
   top: 221px;
   width: 528px;
@@ -712,6 +717,55 @@ header {
   justify-content: center;
   margin: 8px;
 }
-.x-modal {
-  fill: black;
+.footer-email {
+  color: #fff;
+}
+.button-footer {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  border: none;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding-left: 42px;
+  margin-left: 21px;
+}
+.footer-input {
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.footer-email svg {
+  margin-left: 24px;
+}
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-email form {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 72px;
+  margin-left: 78px;
 }
