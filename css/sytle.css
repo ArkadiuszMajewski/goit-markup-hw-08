@@ -727,7 +727,6 @@ header {
   display: flex;
   justify-content: center;
   opacity: 1;
-  position: relative;
 }
 
 .button-modal {
