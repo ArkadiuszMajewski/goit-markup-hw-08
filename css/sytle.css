@@ -9,7 +9,7 @@ body {
   position: relative;
 }
 .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
 }
 .header {
@@ -193,10 +193,19 @@ header {
 
 .article-main ul {
   display: flex;
-  margin: 0px;
+  margin-right: 0px;
   padding: 0px;
   list-style: none;
 }
+.article-main li {
+  margin-right: 30px;
+  padding: 0px;
+}
+.article-main li:last-child {
+  margin-right: 0px;
+  padding: 0px;
+}
+
 .sub-titleh3 {
   color: #212121;
   font-size: 14px;
@@ -210,6 +219,7 @@ header {
   font-size: 14px;
   line-height: 1.71;
   padding: 0px;
+  margin: 0%;
 }
 
 .sub-title1 {
@@ -295,9 +305,10 @@ header {
   line-height: 1.71;
   font-style: normal;
   font-weight: 400;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 1px 0px 0px;
   margin: 0px;
   display: block;
+  letter-spacing: 0.03em;
 }
 .article-box-portfolio {
   margin: 0px;
@@ -400,6 +411,10 @@ header {
   justify-content: center;
   align-items: center;
 }
+.icons-article:last-child {
+  padding: 0%;
+  margin: 0%;
+}
 .footer-left {
   display: block;
 }
@@ -421,7 +436,7 @@ header {
   flex-direction: column;
   margin-left: 70px;
   flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 72px;
 }
 .social-links-all p {
   width: 200px;
@@ -440,7 +455,12 @@ header {
   display: flex;
   padding: 16px 0px 30px 0px;
 }
-
+.social-footer {
+  display: flex;
+}
+.social-links-all > div > div:nth-child(4) > a {
+  margin: 0px;
+}
 .cocial-links-footer {
   height: 44px;
   width: 44px;
