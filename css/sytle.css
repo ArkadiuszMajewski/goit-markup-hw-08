@@ -705,7 +705,7 @@ header {
   justify-content: flex-start;
   padding: 40px;
   position: relative;
-  animation: modalAn 2s;
+  animation: modalAn 250ms;
 }
 
 .is-hidden {
@@ -847,6 +847,9 @@ header {
 .okno input:focus {
   outline: 1px solid var(--brand-color);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline;
 }
 
 .okno div {
@@ -899,11 +902,9 @@ header {
 }
 .okno form textarea:focus {
   outline: 1px solid var(--brand-color);
-}
-.icon-okno {
-  position: absolute;
-  top: 32px;
-  left: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline;
 }
 
 @keyframes modalAn {
@@ -916,6 +917,36 @@ header {
     opacity: 1;
   }
 }
-#imie-input:focus ~ label .telefon {
+#imie-input:focus + .imie {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+.imie {
+  position: absolute;
+  top: 107px;
+  left: 55px;
+}
+#telefon-input:focus + .telefon {
+  fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+.telefon {
+  position: absolute;
+  top: 174px;
+  left: 55px;
+}
+#email-input:focus + .email {
+  fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+.email {
+  position: absolute;
+  top: 243px;
+  left: 54px;
 }

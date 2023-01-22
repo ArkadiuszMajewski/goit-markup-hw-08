@@ -92,34 +92,23 @@
               name="sign-up-form"
               autocomplete="off"
             >
-              <label for="imie-input">
-                Imie
-                <svg class="icon-okno imie" width="12px" height="12px">
-                  <use href="./images/icons.svg#icon-imie"></use>
-                </svg>
-              </label>
-              <input id="imie-input" type="text" name="user-imie" required />
+              <label for="imie-input"> Imie </label>
+              <input id="imie-input" type="text" name="user-name" required />
+              <svg class="imie" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-imie"></use>
+              </svg>
 
-              <label for="telefon-input"
-                >Telefon
-                <svg class="icon-okno telefon" width="13px" height="13px">
-                  <use href="./images/icons.svg#icon-telefon"></use>
-                </svg>
-              </label>
-              <input
-                id="telefon-input"
-                type="tel"
-                name="user-telefon"
-                required
-              />
+              <label for="telefon-input">Telefon </label>
+              <input id="telefon-input" type="tel" name="user-phone" required />
+              <svg class="telefon" width="13px" height="13px">
+                <use href="./images/icons.svg#icon-telefon"></use>
+              </svg>
 
-              <label for="email-input"
-                >Email
-                <svg class="icon-okno" width="15px" height="12px">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </label>
+              <label for="email-input">Email </label>
               <input id="email-input" type="email" name="user-email" required />
+              <svg class="email" width="15px" height="12px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
               <label for="komentarz-input">Komentarz </label>
               <textarea
                 name="user-komentarz"
@@ -141,7 +130,7 @@
                   <a href=""> Politykę Prywatności. </a>
                 </label>
               </div>
-              <button>Wyślij</button>
+              <button type="submit">Wyślij</button>
             </form>
           </div>
         </div>
