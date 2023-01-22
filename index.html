@@ -77,7 +77,7 @@
         <button data-modal-open class="button-main" type="button">
           Zamów usługe
         </button>
-        <div class="modal is-hidden" data-modal>
+        <div class="modal is-hidden oknobase" data-modal>
           <div class="okno">
             <button class="button-modal" data-modal-close>
               <svg class="x-modal" width="11" height="11">
@@ -92,13 +92,33 @@
               name="sign-up-form"
               autocomplete="off"
             >
-              <label for="imie-input"> Imie</label>
-              <input id="imie-input" type="text" name="user-imie" />
-              <label for="telefon-input">Telefon</label>
-              <input id="telefon-input" type="tel" name="user-telefon" />
-              <label for="email-input">Email</label>
-              <input id="email-input" type="email" name="user-email" />
-              <label for="komentarz-input">Komentarz</label>
+              <label for="imie-input">
+                Imie
+                <svg width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-imie"></use>
+                </svg>
+              </label>
+              <input id="imie-input" type="text" name="user-imie" required />
+              <label for="telefon-input"
+                >Telefon
+                <svg width="13px" height="13px">
+                  <use href="./images/icons.svg#icon-telefon"></use>
+                </svg>
+              </label>
+              <input
+                id="telefon-input"
+                type="tel"
+                name="user-telefon"
+                required
+              />
+              <label for="email-input"
+                >Email
+                <svg width="15px" height="12px">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </label>
+              <input id="email-input" type="email" name="user-email" required />
+              <label for="komentarz-input">Komentarz </label>
               <textarea
                 name="user-komentarz"
                 id="komentarz-input"
@@ -112,6 +132,7 @@
                   type="checkbox"
                   name="user-regulamin"
                   value="regulamin-accept"
+                  required
                 />
                 <label for="regulamin-input"
                   >Oświadczam iż akceptuję <a href="">Regulamin</a> i
@@ -556,7 +577,8 @@
         </div>
       </div>
     </footer>
-
+    <div class="test">asdasd</div>
+    <div class="testrev">asdasd</div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

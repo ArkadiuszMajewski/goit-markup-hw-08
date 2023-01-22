@@ -712,10 +712,8 @@ header {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: scale(0) rotate(90deg);
-  transition-property: visibility, opacity, transform, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modalAn 2s;
+  animation-direction: reverse;
 }
 .modal {
   position: fixed;
@@ -728,6 +726,7 @@ header {
   display: flex;
   justify-content: center;
   opacity: 1;
+  animation: modalAn 2s;
 }
 
 .button-modal {
@@ -766,6 +765,7 @@ header {
   line-height: 1.87;
   padding-left: 42px;
   margin-left: 21px;
+  cursor: pointer;
 }
 .footer-input {
   background-color: #2f303a;
@@ -788,14 +788,11 @@ header {
   margin-left: 24px;
 }
 
-.footer-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 .footer-email form {
   display: flex;
   align-items: flex-end;
   padding-top: 72px;
-  margin-left: 78px;
+  margin-left: 69px;
 }
 .sign-up-form {
   display: flex;
@@ -841,13 +838,20 @@ header {
   line-height: 1.16;
   letter-spacing: 0.01em;
   padding-bottom: 4px;
+  position: relative;
 }
 .okno input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
 }
+.okno input:focus {
+  outline: 1px solid var(--brand-color);
+  border-radius: 4px;
+}
+
 .okno div {
   display: flex;
   justify-content: center;
@@ -855,6 +859,7 @@ header {
   padding-top: 24px;
   margin: auto;
 }
+
 .okno label:last-child {
   margin: 0%;
   padding: 0%;
@@ -866,6 +871,7 @@ header {
   cursor: pointer;
   background-color: #212121;
 }
+
 .okno div label {
   font-family: "Roboto";
   font-style: normal;
@@ -894,9 +900,44 @@ header {
   border-radius: 4px;
   border: none;
 }
-.imie {
-  background-color: #220086;
+.okno textarea:focus {
+  outline: 1px solid var(--brand-color);
 }
-#imie-input {
-  background-color: #2196f3;
+.okno form svg {
+  position: absolute;
+  top: 32px;
+  left: 15px;
+}
+
+@keyframes modalAn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale();
+    opacity: 1;
+  }
+}
+.test {
+  opacity: 0;
+
+  width: 50px;
+  height: 50px;
+  background-color: #757575;
+
+  margin: auto;
+}
+.test:hover {
+  animation: modalAn 2s;
+  animation-direction: reverse;
+}
+.testrev:hover {
+  animation: modalAn 2s;
+}
+.testrev {
+  width: 50px;
+  height: 50px;
+  background-color: #757575;
+  margin: auto;
 }
