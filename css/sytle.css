@@ -705,14 +705,13 @@ header {
   justify-content: flex-start;
   padding: 40px;
   position: relative;
+  animation: modalAn 2s;
 }
 
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  animation: modalAn 2s;
-  animation-direction: reverse;
 }
 .modal {
   position: fixed;
@@ -725,7 +724,6 @@ header {
   display: flex;
   justify-content: center;
   opacity: 1;
-  animation: modalAn 2s;
 }
 
 .button-modal {
