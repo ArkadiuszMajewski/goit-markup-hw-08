@@ -94,14 +94,15 @@
             >
               <label for="imie-input">
                 Imie
-                <svg width="12px" height="12px">
+                <svg class="icon-okno imie" width="12px" height="12px">
                   <use href="./images/icons.svg#icon-imie"></use>
                 </svg>
               </label>
               <input id="imie-input" type="text" name="user-imie" required />
+
               <label for="telefon-input"
                 >Telefon
-                <svg width="13px" height="13px">
+                <svg class="icon-okno telefon" width="13px" height="13px">
                   <use href="./images/icons.svg#icon-telefon"></use>
                 </svg>
               </label>
@@ -111,9 +112,10 @@
                 name="user-telefon"
                 required
               />
+
               <label for="email-input"
                 >Email
-                <svg width="15px" height="12px">
+                <svg class="icon-okno" width="15px" height="12px">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </label>
@@ -564,8 +566,9 @@
               <input
                 class="footer-input"
                 type="email"
-                name="email"
+                name="email-footer"
                 placeholder="E-mail"
+                required
             /></label>
             <button class="button-footer" type="submit">
               Zapisz się
@@ -577,8 +580,7 @@
         </div>
       </div>
     </footer>
-    <div class="test">asdasd</div>
-    <div class="testrev">asdasd</div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
