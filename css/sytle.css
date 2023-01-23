@@ -712,6 +712,8 @@ header {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transform: scale(0);
+  transition: transform, opacity;
 }
 .modal {
   position: fixed;
@@ -724,6 +726,8 @@ header {
   display: flex;
   justify-content: center;
   opacity: 1;
+  transition: transform, opacity;
+  transition-duration: 250ms;
 }
 
 .button-modal {
@@ -836,6 +840,7 @@ header {
   letter-spacing: 0.01em;
   padding-bottom: 4px;
   position: relative;
+  cursor: pointer;
 }
 .okno input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -880,6 +885,8 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  position: relative;
+  padding-left: 39px;
 }
 .okno a {
   color: var(--brand-color);
@@ -949,4 +956,35 @@ header {
   position: absolute;
   top: 243px;
   left: 54px;
+}
+
+.okno div input {
+  border: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+}
+.okno div input:focus {
+  outline: none;
+}
+.okno div label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 16px;
+  border: 2px solid black;
+  border-radius: 2px;
+  left: -24px;
+  top: 4px;
+}
+.okno div input:checked + label::before {
+  background-color: var(--brand-color);
+  border: var(--brand-color);
+}
+.icon-checked {
+  position: absolute;
+  top: 448px;
+  left: 49px;
+  pointer-events: none;
 }

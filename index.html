@@ -99,7 +99,13 @@
               </svg>
 
               <label for="telefon-input">Telefon </label>
-              <input id="telefon-input" type="tel" name="user-phone" required />
+              <input
+                id="telefon-input"
+                type="tel"
+                name="user-phone"
+                minlength="6"
+                required
+              />
               <svg class="telefon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-telefon"></use>
               </svg>
@@ -119,17 +125,23 @@
               ></textarea>
               <div>
                 <input
+                  class="checkbox"
                   id="regulamin-input"
                   type="checkbox"
                   name="user-regulamin"
                   value="regulamin-accept"
                   required
+                  checked
                 />
+
                 <label for="regulamin-input"
                   >Oświadczam iż akceptuję <a href="">Regulamin</a> i
                   <a href=""> Politykę Prywatności. </a>
                 </label>
               </div>
+              <svg class="icon-checked" width="12px" height="10px">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
               <button type="submit">Wyślij</button>
             </form>
           </div>
