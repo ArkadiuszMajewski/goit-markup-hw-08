@@ -895,7 +895,7 @@ header {
 .okno a {
   color: var(--brand-color);
 }
-.okno button:last-child {
+.button-okno {
   background-color: var(--brand-color);
   height: 50px;
   width: 200px;
