@@ -185,7 +185,7 @@ header {
 .button-main:hover,
 .button-main:active,
 .button-main:focus {
-  color: var(--activr-color);
+  color: black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
@@ -743,6 +743,7 @@ header {
   position: absolute;
   right: 0px;
   top: 0px;
+  cursor: pointer;
 }
 .footer-email {
   color: #fff;
@@ -784,6 +785,7 @@ header {
   letter-spacing: 0.03em;
   margin-top: 20px;
   color: #fff;
+  padding-left: 20px;
 }
 .footer-email svg {
   margin-left: 24px;
@@ -840,7 +842,6 @@ header {
   letter-spacing: 0.01em;
   padding-bottom: 4px;
   position: relative;
-  cursor: pointer;
 }
 .okno input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -873,8 +874,6 @@ header {
   margin: 0px 8px 0px 0px;
   padding: 0px;
   height: 24px;
-  cursor: pointer;
-  background-color: #212121;
 }
 
 .okno div label {
@@ -887,6 +886,7 @@ header {
   color: #757575;
   position: relative;
   padding-left: 39px;
+  cursor: pointer;
 }
 .okno a {
   color: var(--brand-color);
@@ -984,7 +984,7 @@ header {
 }
 .icon-checked {
   position: absolute;
-  top: 448px;
+  top: 447px;
   left: 49px;
   pointer-events: none;
 }
