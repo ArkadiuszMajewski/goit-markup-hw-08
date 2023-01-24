@@ -786,6 +786,10 @@ header {
   margin-top: 20px;
   color: #fff;
   padding-left: 20px;
+  outline: none;
+}
+.footer-input:focus {
+  border: 1px solid white;
 }
 .footer-email svg {
   margin-left: 24px;
