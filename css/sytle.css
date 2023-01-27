@@ -30,10 +30,10 @@ header {
   color: var(--brand-color);
   margin: 0%;
 }
-.logob-black {
+.logo__black {
   color: #212121;
 }
-.logob-white {
+.logob__white {
   color: #e5e5e5;
 }
 
@@ -62,41 +62,41 @@ header {
   padding: 0px 46px 0px;
 }
 
-.mail-phone-header {
+.mail-phone--header {
   list-style: none;
   display: block;
   display: flex;
   margin-left: 345px;
   padding: 0px;
 }
-.mail-phone-header p {
+.mail-phone--header p {
   margin: 0px;
 }
-.mail-phone-header li {
+.mail-phone--header li {
   display: inline-flex;
   padding-right: 30px;
 }
-.mail-phone-header li:last-child {
+.mail-phone--header li:last-child {
   padding: 0px;
 }
 
-.mail-phone-header a {
+.mail-phone--header a {
   padding-right: 0px;
   display: flex;
   fill: #757575;
 }
 
-.mail-phone-header p:first-child {
+.mail-phone--header p:first-child {
   padding-right: 10px;
 }
-.mail-phone-header li:hover a {
+.mail-phone--header li:hover a {
   fill: var(--brand-color);
   color: var(--brand-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
-.mail-phone-header a:focus {
+.mail-phone--header a:focus {
   fill: var(--brand-color);
   color: var(--brand-color);
   transition-duration: 250ms;
@@ -154,7 +154,7 @@ header {
   margin: auto;
 }
 
-.page-title .title {
+.page-title__title {
   font-size: 44px;
   color: white;
   font-weight: 900;
@@ -663,10 +663,10 @@ header {
 .logo-link {
   text-decoration: none;
 }
-.agencja-active a {
+.nav__agencja-active a {
   color: var(--brand-color);
 }
-.agencja-active a::after {
+.nav__agencja-active a::after {
   position: absolute;
   top: 45px;
   content: "";
@@ -675,7 +675,7 @@ header {
   border: 2px solid #2196f3;
   border-radius: 2px;
 }
-.portfolio-active a::after {
+.nav__portfolio-active a::after {
   position: absolute;
   top: 45px;
   content: "";
@@ -684,7 +684,7 @@ header {
   border: 2px solid #2196f3;
   border-radius: 2px;
 }
-.portfolio-active a {
+.nav__portfolio-active a {
   color: var(--brand-color);
 }
 .x-modal {
