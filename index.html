@@ -68,32 +68,32 @@
     </header>
 
     <main>
-      <div class="page-title">
-        <h1 class="title">
+      <div class="pageTitle">
+        <h1 class="pageTitle__title">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
         <button data-modal-open class="button-main" type="button">
           Zamów usługe
         </button>
-        <div class="modal is-hidden oknobase" data-modal>
-          <div class="okno">
-            <button class="button-modal" data-modal-close>
-              <svg class="x-modal" width="11" height="11">
+        <div class="modal is-hidden" data-modal>
+          <div class="modal__okno">
+            <button class="modal__xButton" data-modal-close>
+              <svg width="11" height="11">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </button>
             <h4>Zostaw swoje dane w formularzu poniżej</h4>
 
             <form
-              class="modal-input"
+              class="modal__input"
               method="get"
               name="sign-up-form"
               autocomplete="off"
             >
               <label for="imie-input"> Imie </label>
               <input id="imie-input" type="text" name="user-name" required />
-              <svg class="imie" width="12px" height="12px">
+              <svg class="modal__imie" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-imie"></use>
               </svg>
 
@@ -105,13 +105,13 @@
                 minlength="6"
                 required
               />
-              <svg class="telefon" width="13px" height="13px">
+              <svg class="modal__telefon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-telefon"></use>
               </svg>
 
               <label for="email-input">Email </label>
               <input id="email-input" type="email" name="user-email" required />
-              <svg class="email" width="15px" height="12px">
+              <svg class="modal__email" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
               <label for="komentarz-input">Komentarz </label>
@@ -137,10 +137,10 @@
                   <a href=""> Politykę Prywatności. </a>
                 </label>
               </div>
-              <svg class="icon-checked" width="12px" height="10px">
+              <svg class="modal__checked" width="12px" height="10px">
                 <use href="./images/icons.svg#icon-checked"></use>
               </svg>
-              <button class="button-okno" type="submit">Wyślij</button>
+              <button class="modal__send" type="submit">Wyślij</button>
             </form>
           </div>
         </div>

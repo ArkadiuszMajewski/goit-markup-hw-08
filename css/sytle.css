@@ -136,7 +136,7 @@ header {
   text-decoration: none;
 }
 
-.page-title {
+.pageTitle {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -154,7 +154,7 @@ header {
   margin: auto;
 }
 
-.page-title__title {
+.pageTitle__title {
   font-size: 44px;
   color: white;
   font-weight: 900;
@@ -687,10 +687,8 @@ header {
 .nav__portfolio-active a {
   color: var(--brand-color);
 }
-.x-modal {
-  fill: black;
-}
-.okno {
+
+.modal__okno {
   top: 221px;
   width: 528px;
   height: 581px;
@@ -730,7 +728,7 @@ header {
   transition-duration: 250ms;
 }
 
-.button-modal {
+.modal__xButton {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -744,6 +742,7 @@ header {
   right: 0px;
   top: 0px;
   cursor: pointer;
+  fill: black;
 }
 .footer-email {
   color: #fff;
@@ -805,7 +804,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-.okno textarea {
+.modal__okno textarea {
   resize: none;
   width: 448px;
   height: 120px;
@@ -820,14 +819,14 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.okno textarea::placeholder {
+.modal__okno textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-input {
+.modal__input {
   display: flex;
   flex-direction: column;
 }
-.okno h4 {
+.modal__okno h4 {
   color: black;
   font-family: "Roboto";
   font-weight: 700;
@@ -837,7 +836,7 @@ header {
   margin: 0%;
   padding-bottom: 12px;
 }
-.okno label {
+.modal__okno label {
   color: rgba(117, 117, 117, 1);
   font-family: "Roboto";
   font-weight: 400;
@@ -847,14 +846,14 @@ header {
   padding-bottom: 4px;
   position: relative;
 }
-.okno input {
+.modal__okno input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
   margin-bottom: 10px;
   padding-left: 42px;
 }
-.okno input:focus {
+.modal__okno input:focus {
   outline: 1px solid var(--brand-color);
   border-radius: 4px;
   transition-duration: 250ms;
@@ -862,7 +861,7 @@ header {
   transition-property: outline;
 }
 
-.okno div {
+.modal__okno div {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -870,17 +869,17 @@ header {
   margin: auto;
 }
 
-.okno label:last-child {
+.modal__okno label:last-child {
   margin: 0%;
   padding: 0%;
 }
-.okno div input {
+.modal__okno div input {
   margin: 0px 8px 0px 0px;
   padding: 0px;
   height: 24px;
 }
 
-.okno div label {
+.modal__okno div label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -892,10 +891,10 @@ header {
   padding-left: 39px;
   cursor: pointer;
 }
-.okno a {
+.modal__okno a {
   color: var(--brand-color);
 }
-.button-okno {
+.modal__send {
   background-color: var(--brand-color);
   height: 50px;
   width: 200px;
@@ -911,7 +910,7 @@ header {
   border-radius: 4px;
   border: none;
 }
-.okno form textarea:focus {
+.modal__okno form textarea:focus {
   outline: 1px solid var(--brand-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -928,50 +927,50 @@ header {
     opacity: 1;
   }
 }
-#imie-input:focus + .imie {
+#imie-input:focus + .modal__imie {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
-.imie {
+.modal__imie {
   position: absolute;
   top: 107px;
   left: 55px;
 }
-#telefon-input:focus + .telefon {
+#telefon-input:focus + .modal__telefon {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
-.telefon {
+.modal__telefon {
   position: absolute;
   top: 174px;
   left: 55px;
 }
-#email-input:focus + .email {
+#email-input:focus + .modal__email {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
-.email {
+.modal__email {
   position: absolute;
   top: 243px;
   left: 54px;
 }
 
-.okno div input {
+.modal__okno div input {
   border: none;
   appearance: none;
   outline: none;
   position: relative;
 }
-.okno div input:focus {
+.modal__okno div input:focus {
   outline: none;
 }
-.okno div label::before {
+.modal__okno div label::before {
   content: "";
   display: block;
   position: absolute;
@@ -982,11 +981,11 @@ header {
   left: -24px;
   top: 4px;
 }
-.okno div input:checked + label::before {
+.modal__okno div input:checked + label::before {
   background-color: var(--brand-color);
   border: var(--brand-color);
 }
-.icon-checked {
+.modal__checked {
   position: absolute;
   top: 447px;
   left: 49px;
