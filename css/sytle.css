@@ -33,7 +33,7 @@ header {
 .logo__black {
   color: #212121;
 }
-.logob__white {
+.logo__white {
   color: #e5e5e5;
 }
 
@@ -110,18 +110,18 @@ header {
   align-items: center;
 }
 
-.mail-phone-footer {
+.mail-phone--footer {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-.mail-phone-footer a {
+.mail-phone--footer a {
   padding-top: 9px;
   display: block;
 }
-.mail-phone-footer a:hover,
-.mail-phone-footer a:active,
-.mail-phone-footer a:focus {
+.mail-phone--footer a:hover,
+.mail-phone--footer a:active,
+.mail-phone--footer a:focus {
   color: var(--brand-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -199,16 +199,15 @@ header {
   padding: 0px;
   list-style: none;
 }
-.article-main li {
+.article-main__listIcons li {
   margin-right: 30px;
   padding: 0px;
 }
-.article-main li:last-child {
+.article-main__listIcons li:last-child {
   margin-right: 0px;
-  padding: 0px;
 }
 
-.sub-titleh3 {
+.article-main__listIcons {
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
@@ -216,7 +215,7 @@ header {
   margin: 0px;
   padding: 30px 0px 0px 0px;
 }
-.article-main p {
+.article-main__listIcons p {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
@@ -224,7 +223,7 @@ header {
   margin: 0%;
 }
 
-.sub-title1 {
+.article-main__titlePictures {
   color: #212121;
   font-size: 36px;
   line-height: 1.27;
@@ -234,7 +233,7 @@ header {
   text-align: center;
 }
 
-.pictures {
+.article-main__pictures {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -242,11 +241,13 @@ header {
   padding: 0px;
 }
 
-.section-naszzespol {
-  padding: 0px;
+.article-team {
+  padding: 94px 0px;
+  max-width: 1600px;
+  margin: auto;
   background-color: #f5f4fa;
 }
-.sub-title2 {
+.article-team__title {
   color: #212121;
   font-size: 36px;
   line-height: 1.27;
@@ -255,7 +256,7 @@ header {
   padding: 0%;
   text-align: center;
 }
-.fig-zespol {
+.article-team__person-list li {
   margin-top: 50px;
   padding: 0px;
   background-color: #ffffff;
@@ -267,17 +268,17 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.fig-zespol figure {
+.article-team__person-list figure {
   margin: 0px;
 }
-.ul1 {
+.article-team__person-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
 }
-.ul1 figcaption {
+.article-team__person-list figcaption {
   color: #212121;
   font-size: 16px;
   line-height: 1.19;
@@ -287,7 +288,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.ul1 .job {
+.article-team__job {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -299,9 +300,12 @@ header {
   height: 252px;
   margin: 0px;
   display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  margin: auto;
 }
 
-.address {
+.footer__address {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
@@ -312,24 +316,26 @@ header {
   display: block;
   letter-spacing: 0.03em;
 }
-.article-box-portfolio {
+.article-portfolio {
   margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 94px 0px;
 }
-.article-box-portfolio ul:first-child {
+.article-portfolio ul:first-child {
   display: flex;
   align-items: flex-end;
   list-style: none;
   padding: 0%;
   margin: 0%;
 }
-.article-box-portfolio li {
+.article-portfolio li {
   padding-right: 8px;
+  margin-bottom: 20px;
 }
-.button-portfolio {
+.article-portfolio__buttons {
   color: #212121;
   font-size: 16px;
   line-height: 1.62;
@@ -340,8 +346,8 @@ header {
   font-family: "Roboto";
   padding: 6px 22px 6px 22px;
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
+.article-portfolio__buttons:hover,
+.article-portfolio__buttons:focus {
   background-color: var(--brand-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -352,13 +358,13 @@ header {
   transition-property: color, box-shadow;
 }
 
-.button-portfolio:active {
+.article-portfolio__buttons:active {
   color: var(--activr-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
-.pictures-portfolio figcaption {
+.article-portfolio__pictures figcaption {
   color: #212121;
   font-size: 18px;
   line-height: 2;
@@ -370,7 +376,7 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.pictures-portfolio figcaption p {
+.article-portfolio__pictures figcaption p {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
@@ -379,7 +385,7 @@ header {
   padding: 4px 0px 20px 0px;
   margin: 0%;
 }
-.pictures-portfolio {
+.article-portfolio__pictures {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -387,24 +393,24 @@ header {
   padding: 0%;
   margin: 0px;
 }
-.pictures-portfolio li {
+.article-portfolio__pictures li {
   padding: 30px 0px 0px 0px;
 }
-.pictures-portfolio figure {
+.article-portfolio__pictures figure {
   margin: 0px;
   transition-duration: 250ms;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pictures-portfolio img {
+.article-portfolio__pictures img {
   display: block;
 }
-.section {
+.container--section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.icons-article {
+.article-main__icons {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -413,34 +419,34 @@ header {
   justify-content: center;
   align-items: center;
 }
-.icons-article:last-child {
+.article-main__icons:last-child {
   padding: 0%;
   margin: 0%;
 }
-.footer-left {
-  display: block;
-}
+
 .container-footer {
+  display: block;
   display: flex;
-
   align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 60px;
 }
 
-.icon-naszzespol {
+.icon-naszteam {
   padding: 0px 0px 30px 0px;
 }
-.icon-naszzespol a {
+.icon-naszteam a {
   text-decoration: none;
 }
-.social-links-all {
+.footer__social-links {
   color: #fff;
   display: flex;
   flex-direction: column;
   margin-left: 70px;
   flex-wrap: wrap;
-  margin-top: 72px;
+  margin-top: 12px;
 }
-.social-links-all p {
+.footer__social-links p {
   width: 200px;
   padding-bottom: 20px;
   margin: 0%;
@@ -455,41 +461,24 @@ header {
 }
 .social-links {
   display: flex;
+}
+.social-links--article-team {
   padding: 16px 0px 30px 0px;
 }
+
 .social-footer {
   display: flex;
 }
-.social-links-all > div > div:nth-child(4) > a {
+.footer__social-links > div > div:nth-child(4) > a {
   margin: 0px;
 }
-.cocial-links-footer {
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-}
-.icon-footer {
+
+.social-links__icon--footer {
   display: block;
   fill: #ffffff;
 }
-.cocial-links-footer:hover,
-.cocial-links-footer:active,
-.cocial-links-footer:focus {
-  background-color: var(--brand-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-}
 
-.footer-left {
-  margin-top: 60px;
-}
-.companys {
+.section-clients__companys {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -500,7 +489,10 @@ header {
   justify-content: center;
   fill: #afb1b8;
 }
-.nasi-klienci {
+
+.section-clients p {
+  margin: 0%;
+  padding: 94px 0px 50px 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -509,27 +501,23 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.nasi-klienci p {
-  margin: 0%;
-  padding: 94px 0px 50px 0px;
-}
-.nasi-klienci ul {
+.section-clients ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: 0px;
+  margin: 0%;
   padding: 0%;
 }
-.nasi-klienci li {
+.section-clients li {
   padding: 0px 0px 94px 0px;
 }
-.nasi-klienci li:last-child {
+.section-clients li:last-child {
   padding: 0%;
 }
 
-.companys:hover,
-.companys:active,
-.companys:focus {
+.section-clients__companys:hover,
+.section-clients__companys:active,
+.section-clients__companys:focus {
   border: 1px solid var(--brand-color);
   fill: #2196f3;
   cursor: pointer;
@@ -538,11 +526,11 @@ header {
   transition-property: fill, border;
 }
 
-.icon-nasi-klienci {
+.social-links__icon {
   fill: #afb1b8;
   display: block;
 }
-.social-links-nasi-klienci {
+.social-links__links {
   height: 44px;
   width: 44px;
   border-radius: 50%;
@@ -555,25 +543,24 @@ header {
   align-items: center;
   justify-content: center;
 }
-.social-links-nasi-klienci:hover,
-.social-links-nasi-klienci:focus,
-.social-links-nasi-klienci:active {
+.social-links__links:hover,
+.social-links__links:focus,
+.social-links__links:active {
   background-color: var(--brand-color);
-
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background-color;
 }
-.social-links-nasi-klienci:hover .icon-nasi-klienci,
-.social-links-nasi-klienci:active .icon-nasi-klienci,
-.social-links-nasi-klienci:focus .icon-nasi-klienci {
+.social-links__links:hover .social-links__icon,
+.social-links__links:active .social-links__icon,
+.social-links__links:focus .social-links__icon {
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
 
-.pictures-text {
+.article-main__picturesText {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -590,10 +577,10 @@ header {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.pictures li {
+.article-main__pictures li {
   position: relative;
 }
-.pictures-portfolio-overlay {
+.article-portfolio__overlay {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   display: flex;
@@ -613,10 +600,10 @@ header {
   transition-property: transform, box-shadow;
 }
 
-.pictures-portfolio figure:hover .pictures-portfolio-overlay {
+.article-portfolio__pictures figure:hover .article-portfolio__overlay {
   transform: translateY(0%);
 }
-.pictures-portfolio figure:first-child:hover {
+.article-portfolio__pictures figure:first-child:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -657,7 +644,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-.box {
+.article-portfolio__box {
   position: relative;
   overflow: hidden;
 }
@@ -746,7 +733,7 @@ header {
   cursor: pointer;
   fill: black;
 }
-.footer-email {
+.footer__email {
   color: #fff;
 }
 .button--footer {
@@ -758,7 +745,7 @@ header {
   fill: white;
 }
 
-.footer-input {
+.footer__input {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -777,17 +764,17 @@ header {
   padding-left: 20px;
   outline: none;
 }
-.footer-input:focus {
+.footer__input:focus {
   border: 1px solid white;
 }
-.footer-email svg {
+.footer__email svg {
   margin-left: 24px;
 }
 
-.footer-email form {
+.footer__email form {
   display: flex;
   align-items: flex-end;
-  padding-top: 72px;
+  padding-top: 12px;
   margin-left: 69px;
 }
 .sign-up-form {
