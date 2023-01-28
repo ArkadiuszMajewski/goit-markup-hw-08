@@ -165,7 +165,10 @@ header {
   margin: 0px;
   text-align: center;
 }
-.button-main {
+.button--main {
+  margin: 30px auto 0px;
+}
+.button {
   background-color: var(--brand-color);
   height: 50px;
   width: 200px;
@@ -176,19 +179,18 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: "Roboto";
-  margin: 30px auto 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
 }
-
-.button-main:hover,
-.button-main:active,
-.button-main:focus {
+.button:hover,
+.button:active,
+.button:focus {
   color: black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: color, fill;
+  fill: black;
 }
 
 .article-main ul {
@@ -747,27 +749,15 @@ header {
 .footer-email {
   color: #fff;
 }
-.button-footer {
-  width: 200px;
-  height: 50px;
-  background-color: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #fff;
-  display: flex;
-  border: none;
-  font-family: "Roboto";
+.button--footer {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   padding-left: 42px;
   margin-left: 21px;
-  cursor: pointer;
+  fill: white;
 }
+
 .footer-input {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -894,21 +884,8 @@ header {
 .modal__okno a {
   color: var(--brand-color);
 }
-.modal__send {
-  background-color: var(--brand-color);
-  height: 50px;
-  width: 200px;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  font-family: "Roboto";
+.button--modal__send {
   margin: 30px auto 0px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
 }
 .modal__okno form textarea:focus {
   outline: 1px solid var(--brand-color);
