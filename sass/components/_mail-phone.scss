@@ -1,0 +1,33 @@
+.mail-phone {
+  list-style: none;
+  padding: 0%;
+  & a {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+  }
+  &-cont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  & li:hover a {
+    @extend %mail-phone;
+  }
+  & a:focus {
+    @extend %mail-phone;
+  }
+  &--footer {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  &--footer a {
+    padding-top: 9px;
+    display: block;
+  }
+}

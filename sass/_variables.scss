@@ -1,0 +1,34 @@
+:root {
+  --brand-color: #2196f3;
+  --activr-color: #220086;
+}
+body {
+  margin: 0cm;
+  background-color: #ffffff;
+  font-family: "Roboto";
+  position: relative;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+%social-links {
+  background-color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color, color;
+}
+%social-links-icons {
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+%mail-phone {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}

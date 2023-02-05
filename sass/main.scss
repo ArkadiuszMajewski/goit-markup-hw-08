@@ -1,0 +1,19 @@
+@import "./components/page-footer";
+@import "./components/page-header";
+@import "./components/index-main";
+@import "./utils/variables";
+@import "./components/portfolio-main";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/mail-phone";
+@import "./components/social-links";
+body {
+  margin: 0cm;
+  background-color: #ffffff;
+  font-family: "Roboto";
+  position: relative;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}

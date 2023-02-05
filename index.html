@@ -14,7 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/sytle.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -92,13 +92,20 @@
               autocomplete="off"
             >
               <label for="imie-input"> Imie </label>
-              <input id="imie-input" type="text" name="user-name" required />
-              <svg class="modal__imie" width="12px" height="12px">
+              <input
+                class="modal__name-input"
+                id="imie-input"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="modal__name" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-imie"></use>
               </svg>
 
               <label for="telefon-input">Telefon </label>
               <input
+                class="modal__telefon-input"
                 id="telefon-input"
                 type="tel"
                 name="user-phone"
@@ -110,7 +117,13 @@
               </svg>
 
               <label for="email-input">Email </label>
-              <input id="email-input" type="email" name="user-email" required />
+              <input
+                class="modal__email-input"
+                id="email-input"
+                type="email"
+                name="user-email"
+                required
+              />
               <svg class="modal__email" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -148,7 +161,7 @@
         </div>
       </div>
 
-      <div class="container container--section article-main">
+      <div class="container article-main">
         <ul class="article-main__listIcons">
           <li>
             <div class="article-main__icons">

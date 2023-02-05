@@ -1,0 +1,37 @@
+.social-links {
+  display: flex;
+  &--article-team {
+    padding: 16px 0px 30px 0px;
+  }
+  &__icon {
+    fill: #afb1b8;
+    display: block;
+  }
+  &__links {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__links:hover,
+  &__links:focus,
+  &__links:active {
+    @extend %social-links;
+  }
+  &__links:hover &__icon,
+  &__links:active &__icon,
+  &__links:focus &__icon {
+    @extend %social-links-icons;
+  }
+  &__icon--footer {
+    display: block;
+    fill: #ffffff;
+  }
+}
