@@ -1,7 +1,7 @@
 .mail-phone {
   list-style: none;
   padding: 0%;
-  & a {
+  a {
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -15,10 +15,10 @@
     justify-content: center;
     align-items: center;
   }
-  & li:hover a {
+  li:hover a {
     @extend %mail-phone;
   }
-  & a:focus {
+  a:focus {
     @extend %mail-phone;
   }
   &--footer {

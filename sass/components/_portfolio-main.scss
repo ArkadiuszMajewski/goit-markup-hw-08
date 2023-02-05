@@ -5,14 +5,14 @@
   align-items: center;
   justify-content: flex-start;
   padding: 94px 0px;
-  & ul:first-child {
+  ul:first-child {
     display: flex;
     align-items: flex-end;
     list-style: none;
     padding: 0%;
     margin: 0%;
   }
-  & li {
+  li {
     padding-right: 8px;
     margin-bottom: 20px;
   }
