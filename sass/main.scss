@@ -1,7 +1,7 @@
+@import "./components/variables";
 @import "./components/page-footer";
 @import "./components/page-header";
 @import "./components/index-main";
-@import "./utils/variables";
 @import "./components/portfolio-main";
 @import "./components/button";
 @import "./components/logo";
@@ -14,6 +14,6 @@ body {
   position: relative;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
 }

@@ -1,3 +1,27 @@
+:root {
+  --brand-color: #2196f3;
+  --activr-color: #220086;
+}
+
+.social-links__links:hover, .social-links__links:focus, .social-links__links:active {
+  background-color: var(--brand-color);
+  -webkit-transition-property: fill, background-color, color;
+  transition-property: fill, background-color, color;
+}
+
+.social-links__links:hover .social-links__icon, .social-links__links:active .social-links__icon, .social-links__links:focus .social-links__icon {
+  fill: #ffffff;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+}
+
+.mail-phone a:focus, .mail-phone li:hover a, .nav a:focus, .nav a:active, .nav a:hover {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
 .footer {
   background-color: #2f303a;
   height: 252px;
@@ -8,7 +32,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1600px;
   margin: auto;
 }
 .footer__address {
@@ -94,19 +117,6 @@
           align-items: flex-end;
   padding-top: 12px;
   margin-left: 69px;
-}
-
-.button--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding-left: 42px;
-  margin-left: 21px;
-  fill: white;
 }
 
 .social-footer {
@@ -609,6 +619,7 @@
   line-height: 1.71;
   padding: 0px;
   margin: 0%;
+  font-weight: 400;
 }
 .article-main__titlePictures {
   color: #212121;
@@ -675,10 +686,17 @@
 .article-main__pictures li {
   position: relative;
 }
+.article-main__sub-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 .article-team {
   padding: 94px 0px;
-  max-width: 1600px;
   margin: auto;
   background-color: #f5f4fa;
 }
@@ -798,54 +816,6 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: fill, border;
   transition-property: fill, border;
-}
-
-:root {
-  --brand-color: #2196f3;
-  --activr-color: #220086;
-}
-
-body {
-  margin: 0cm;
-  background-color: #ffffff;
-  font-family: "Roboto";
-  position: relative;
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.social-links__links:hover, .social-links__links:focus, .social-links__links:active {
-  background-color: var(--brand-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: fill, background-color, color;
-  transition-property: fill, background-color, color;
-}
-
-.social-links__links:hover .social-links__icon, .social-links__links:active .social-links__icon, .social-links__links:focus .social-links__icon {
-  fill: #ffffff;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-}
-
-.mail-phone a:focus, .mail-phone li:hover a, .nav a:focus, .nav a:active, .nav a:hover {
-  fill: var(--brand-color);
-  color: var(--brand-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color;
-  transition-property: color;
 }
 
 .article-portfolio {
@@ -1040,6 +1010,19 @@ body {
   fill: black;
 }
 
+.button--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 42px;
+  margin-left: 21px;
+  fill: white;
+}
+
 .logo-link {
   text-decoration: none;
 }
@@ -1137,6 +1120,6 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

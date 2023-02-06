@@ -248,7 +248,7 @@
 .article-main {
   padding-top: 94px;
   padding-bottom: 94px;
-  & ul {
+  ul {
     display: flex;
     margin-right: 0px;
     padding: 0px;
@@ -276,6 +276,7 @@
     line-height: 1.71;
     padding: 0px;
     margin: 0%;
+    font-weight: 400;
   }
 
   &__titlePictures {
@@ -328,10 +329,18 @@
   &__pictures li {
     position: relative;
   }
+  &__sub-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 .article-team {
   padding: 94px 0px;
-  max-width: 1600px;
+
   margin: auto;
   background-color: #f5f4fa;
   &__title {
