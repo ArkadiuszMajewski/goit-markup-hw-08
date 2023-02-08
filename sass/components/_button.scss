@@ -24,12 +24,20 @@
     transition-property: color, fill;
     fill: black;
   }
-}
-.button--footer {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 42px;
-  margin-left: 21px;
-  fill: white;
+  &--footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 42px;
+
+    fill: white;
+    @include mq(phone, max) {
+      margin: 20px auto 60px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      margin-left: 21px;
+    }
+  }
 }

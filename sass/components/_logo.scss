@@ -4,29 +4,37 @@
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-
+  font-size: 24px;
   letter-spacing: normal;
   line-height: 1.38;
   color: var(--brand-color);
-  margin: 0%;
   text-decoration: none;
-
   &__black {
     color: #212121;
   }
   &__white {
     color: #e5e5e5;
   }
-}
-.logo--header {
-  @include mq(phone, max) {
-    padding: 16px 15px;
-    font-size: 24px;
-  }
-  @include mq(phone) {
-  }
-  @include mq(desktop) {
-    padding-left: 15px;
-    font-size: 26px;
+  &--header {
+    @include mq(phone, max) {
+      padding: 16px 15px;
+      font-size: 24px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      padding-left: 15px;
+      font-size: 26px;
+    }
+    &--footer {
+      @include mq(phone, max) {
+        margin: 0px auto;
+      }
+      @include mq(phone) {
+      }
+      @include mq(desktop) {
+        margin: 0%;
+      }
+    }
   }
 }

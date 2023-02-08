@@ -1,10 +1,14 @@
 .footer {
   background-color: #2f303a;
-  height: 252px;
-  margin: 0px;
+
   display: flex;
   justify-content: center;
   margin: auto;
+  @include mq(desktop) {
+    height: 252px;
+    margin: 0px;
+  }
+
   &__address {
     color: #ffffff;
     font-size: 14px;
@@ -19,11 +23,18 @@
 
   &__social-links {
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    flex-wrap: wrap;
-    margin-top: 12px;
+    margin-top: 20px;
+    @include mq(phone, max) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 70px;
+    }
   }
   &__social-links p {
     width: 200px;
@@ -37,6 +48,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: block;
+    @include mq(phone, max) {
+      margin-top: 60px;
+      text-align: center;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+    }
   }
   &__social-links > div > div:nth-child(4) > a {
     margin: 0px;
@@ -44,6 +63,13 @@
 
   &__email {
     color: #fff;
+    @include mq(phone, max) {
+      margin-top: 60px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+    }
   }
   &__input {
     background-color: #2f303a;
@@ -72,10 +98,23 @@
   }
 
   &__email form {
+    @include mq(phone, max) {
+      text-align: center;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      display: flex;
+      align-items: flex-end;
+      padding-top: 12px;
+      margin-left: 69px;
+    }
+  }
+  &__conrainer {
     display: flex;
-    align-items: flex-end;
-    padding-top: 12px;
-    margin-left: 69px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -83,9 +122,19 @@
   display: flex;
 }
 .container-footer {
-  display: block;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 60px;
+  @include mq(phone, max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq(phone) {
+  }
+  @include mq(desktop) {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
 }
