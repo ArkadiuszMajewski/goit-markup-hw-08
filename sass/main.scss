@@ -1,4 +1,5 @@
-@import "./components/variables";
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./components/page-footer";
 @import "./components/page-header";
 @import "./components/index-main";
@@ -8,12 +9,31 @@
 @import "./components/mail-phone";
 @import "./components/social-links";
 body {
-  margin: 0cm;
+  margin: 0px auto;
   background-color: #ffffff;
   font-family: "Roboto";
   position: relative;
+  min-width: 320px;
+  @include mq(phone, max) {
+    width: 480px;
+    margin: auto;
+  }
+  @include mq(phone) {
+    width: 768px;
+    margin: auto;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+    margin: auto;
+  }
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+@include mq(phone, max) {
+}
+@include mq(phone) {
+}
+@include mq(desktop) {
 }

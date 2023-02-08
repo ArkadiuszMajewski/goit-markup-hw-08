@@ -1,0 +1,23 @@
+:root {
+  --brand-color: #2196f3;
+  --activr-color: #220086;
+}
+%social-links {
+  background-color: var(--brand-color);
+
+  transition-property: fill, background-color, color;
+}
+%social-links-icons {
+  fill: #ffffff;
+
+  transition-property: fill;
+}
+%mail-phone {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  transition-property: color;
+}
+%transition-250ms-cb {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

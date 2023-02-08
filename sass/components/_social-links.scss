@@ -1,7 +1,15 @@
 .social-links {
   display: flex;
   &--article-team {
-    padding: 16px 0px 30px 0px;
+    @include mq(phone, max) {
+      position: absolute;
+      bottom: 24px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      padding: 16px 0px 30px 0px;
+    }
   }
   &__icon {
     fill: #afb1b8;

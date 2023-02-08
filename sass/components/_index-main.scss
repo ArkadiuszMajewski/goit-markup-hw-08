@@ -6,8 +6,8 @@
     url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: #2f303a;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,15 +15,32 @@
   max-width: 1600px;
   margin: auto;
   &__title {
-    font-size: 44px;
     color: white;
     font-weight: 900;
     letter-spacing: normal;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0px auto;
     text-align: center;
+    @include mq(phone, max) {
+      font-size: 26px;
+    }
+    @include mq(phone) {
+      font-size: 26px;
+    }
+    @include mq(desktop) {
+      font-size: 44px;
+    }
+  }
+  @include mq(phone, max) {
+    height: 400px;
+  }
+  @include mq(phone) {
+    height: 400px;
+  }
+  @include mq(desktop) {
+    height: 600px;
   }
 }
 
@@ -36,8 +53,8 @@
 }
 .modal {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   top: 0ch;
   left: 0cm;
   background-color: rgba(0, 0, 0, 0.2);
@@ -48,9 +65,6 @@
   transition: transform, opacity;
   transition-duration: 250ms;
   &__okno {
-    top: 221px;
-    width: 528px;
-    height: 581px;
     background-color: white;
     position: fixed;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,8 +75,21 @@
     align-items: center;
     justify-content: flex-start;
     padding: 40px;
-    position: relative;
     animation: modalAn 250ms;
+    position: relative;
+    @include mq(phone, max) {
+      top: 93px;
+      width: 450px;
+      height: 609px;
+      left: 0px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      top: 221px;
+      width: 528px;
+      height: 581px;
+    }
   }
   &__xButton {
     width: 30px;
@@ -82,8 +109,7 @@
   }
   &__okno textarea {
     resize: none;
-    width: 448px;
-    height: 120px;
+
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
@@ -94,6 +120,16 @@
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    @include mq(phone, max) {
+      width: 370px;
+      height: 120px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      width: 448px;
+      height: 120px;
+    }
   }
   &__okno textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -111,6 +147,7 @@
     letter-spacing: 0.03em;
     margin: 0%;
     padding-bottom: 12px;
+    text-align: center;
   }
   &__okno label {
     color: rgba(117, 117, 117, 1);
@@ -246,20 +283,36 @@
 }
 
 .article-main {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include mq(phone, max) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include mq(phone) {
+  }
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   ul {
-    display: flex;
-    margin-right: 0px;
-    padding: 0px;
     list-style: none;
+    @include mq(phone, max) {
+      flex-basis: calc(100% / 1);
+      padding: 0px 15px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      display: flex;
+      margin-right: 0px;
+      padding: 0px;
+    }
   }
-  &__listIcons li {
-    margin-right: 30px;
-    padding: 0px;
-  }
-  &__listIcons li:last-child {
-    margin-right: 0px;
+  &__listIcons li:not(:last-child) {
+    @include mq(desktop) {
+      margin-right: 30px;
+      padding: 0px;
+    }
   }
 
   &__listIcons {
@@ -274,11 +327,33 @@
     color: #757575;
     font-size: 14px;
     line-height: 1.71;
-    padding: 0px;
-    margin: 0%;
+    padding-bottom: 30px;
     font-weight: 400;
+    @include mq(phone, max) {
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      padding: 0px;
+      margin: 0%;
+    }
   }
-
+  &__sub-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    @include mq(phone, max) {
+      text-align: center;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+    }
+  }
   &__titlePictures {
     color: #212121;
     font-size: 36px;
@@ -287,6 +362,15 @@
     padding: 94px 0px 50px 0px;
     margin: 0%;
     text-align: center;
+    @include mq(phone, max) {
+      display: none;
+    }
+    @include mq(phone) {
+      display: none;
+    }
+    @include mq(desktop) {
+      display: block;
+    }
   }
 
   &__pictures {
@@ -295,19 +379,37 @@
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    @include mq(phone, max) {
+      display: none;
+    }
+    @include mq(phone) {
+      display: none;
+    }
+    @include mq(desktop) {
+    }
   }
   &__icons {
-    width: 270px;
-    height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mq(phone, max) {
+      width: 450px;
+      height: 120px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      width: 270px;
+      height: 120px;
+    }
   }
   &__icons:last-child {
-    padding: 0%;
-    margin: 0%;
+    @include mq(desktop) {
+      padding: 0%;
+      margin: 0%;
+    }
   }
   &__picturesText {
     display: flex;
@@ -329,32 +431,39 @@
   &__pictures li {
     position: relative;
   }
-  &__sub-title {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
 }
 .article-team {
-  padding: 94px 0px;
-
-  margin: auto;
   background-color: #f5f4fa;
+  @include mq(phone, max) {
+    padding: 60px 0px;
+  }
+  @include mq(phone) {
+  }
+  @include mq(desktop) {
+    padding: 94px 0px;
+    margin: auto;
+  }
+
   &__title {
     color: #212121;
-    font-size: 36px;
-    line-height: 1.27;
     font-weight: 700;
     margin: 0px;
     padding: 0%;
     text-align: center;
+    @include mq(phone, max) {
+      font-size: 28px;
+      line-height: 1.17;
+    }
+    @include mq(phone) {
+      font-size: 28px;
+      line-height: 1.17;
+    }
+    @include mq(desktop) {
+      font-size: 36px;
+      line-height: 1.27;
+    }
   }
   &__person-list li {
-    margin-top: 50px;
-    padding: 0px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -362,27 +471,78 @@
     align-items: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+    @include mq(phone, max) {
+      margin-top: 30px;
+      padding: 0%;
+      width: 450px;
+      height: 622px;
+      position: relative;
+    }
+    @include mq(phone) {
+      margin-top: 30px;
+    }
+    @include mq(desktop) {
+      margin-top: 50px;
+      padding: 0px;
+    }
   }
 
   &__person-list figure {
-    margin: 0px;
+    @include mq(desktop) {
+      margin: 0px;
+    }
+  }
+  &__person-list img {
+    @include mq(phone, max) {
+      width: 450px;
+      height: 460px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    @include mq(phone) {
+      width: 354px;
+      height: 374px;
+    }
+    @include mq(desktop) {
+      width: 270px;
+      height: 260px;
+    }
   }
   &__person-list {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
+
+    @include mq(phone, max) {
+      padding: 0px 15px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      margin: 0px;
+    }
   }
   &__person-list figcaption {
     color: #212121;
     font-size: 16px;
     line-height: 1.19;
     font-weight: 500;
-    margin-top: 30px;
-    padding: 0px;
     text-align: center;
     letter-spacing: 0.03em;
+    width: 200px;
+    @include mq(phone, max) {
+      position: absolute;
+      left: 120px;
+      top: 490px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      margin-top: 30px;
+      padding: 0px;
+    }
   }
   &__job {
     color: #757575;
@@ -390,12 +550,19 @@
     font-weight: 400;
     display: block;
     padding-top: 10px;
+
+    @include mq(phone, max) {
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      display: block;
+      padding-top: 10px;
+    }
   }
 }
 .section-clients {
   &__companys {
-    width: 170px;
-    height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     display: block;
@@ -403,10 +570,23 @@
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
+    @include mq(phone, max) {
+      width: 210px;
+      height: 92px;
+    }
+    @include mq(phone) {
+      width: 226px;
+      height: 92px;
+    }
+    @include mq(desktop) {
+      width: 170px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   p {
-    margin: 0%;
-    padding: 94px 0px 50px 0px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -414,19 +594,55 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    @include mq(phone, max) {
+      padding: 60px 0px 0px 0px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      margin: 0%;
+      padding: 94px 0px 50px 0px;
+    }
   }
   ul {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0%;
-    padding: 0%;
+
+    @include mq(phone, max) {
+      display: flex;
+      flex-basis: calc(100% / 2 - 30px);
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      padding: 0px 15px;
+    }
+    @include mq(phone) {
+      display: flex;
+      flex-basis: calc(100% / 3 - 60px);
+      gap: 30px;
+      margin-bottom: 60px;
+      padding: 0px 15px;
+      flex-wrap: wrap;
+    }
+    @include mq(desktop) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0%;
+      padding: 0%;
+    }
   }
   li {
-    padding: 0px 0px 94px 0px;
+    @include mq(phone, max) {
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      padding-bottom: 94px;
+    }
   }
   li:last-child {
-    padding: 0%;
+    @include mq(desktop) {
+      padding: 0%;
+    }
   }
 
   &__companys:hover,
