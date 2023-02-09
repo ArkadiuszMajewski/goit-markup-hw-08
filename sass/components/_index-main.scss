@@ -12,8 +12,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1600px;
-  margin: auto;
+  margin: 0px auto;
+  @include mq(phone, max) {
+    width: 479px;
+  }
+
+  @include mq(phone) {
+    width: 767px;
+  }
+  @include mq(desktop) {
+    width: 1600px;
+    max-width: 1600px;
+  }
+
   &__title {
     color: white;
     font-weight: 900;
@@ -43,7 +54,6 @@
     height: 600px;
   }
 }
-
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
@@ -64,6 +74,7 @@
   opacity: 1;
   transition: transform, opacity;
   transition-duration: 250ms;
+
   &__okno {
     background-color: white;
     position: fixed;
@@ -80,7 +91,7 @@
     @include mq(phone, max) {
       top: 93px;
       width: 450px;
-      height: 609px;
+      height: 650px;
       left: 0px;
     }
     @include mq(phone) {
@@ -109,7 +120,6 @@
   }
   &__okno textarea {
     resize: none;
-
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
@@ -245,7 +255,7 @@
   }
   &__email {
     position: absolute;
-    top: 243px;
+    top: 265px;
     left: 54px;
   }
   &__email-input:focus + &__email {
@@ -257,7 +267,7 @@
 
   &__telefon {
     position: absolute;
-    top: 174px;
+    top: 198px;
     left: 55px;
   }
   &__telefon-input:focus + &__telefon {
@@ -268,17 +278,23 @@
   }
   &__name {
     position: absolute;
-    top: 107px;
-    left: 55px;
+
+    @include mq(phone, max) {
+      top: 130px;
+      left: 55px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      top: 107px;
+      left: 55px;
+    }
   }
   &__name-input:focus + &__name {
     fill: #2196f3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
-  }
-  & .button--modal__send {
-    margin: 30px auto 0px;
   }
 }
 
@@ -443,7 +459,13 @@
     padding: 94px 0px;
     margin: auto;
   }
+  @include mq(phone, max) {
+    width: 479px;
+  }
 
+  @include mq(phone) {
+    width: 767px;
+  }
   &__title {
     color: #212121;
     font-weight: 700;

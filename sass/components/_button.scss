@@ -40,4 +40,14 @@
       margin-left: 21px;
     }
   }
+  &--modal__send {
+    @include mq(phone, max) {
+      margin: 41px auto 50px;
+    }
+    @include mq(phone) {
+    }
+    @include mq(desktop) {
+      margin: 30px auto 0px;
+    }
+  }
 }

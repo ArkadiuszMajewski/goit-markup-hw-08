@@ -393,8 +393,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1600px;
-  margin: auto;
+  margin: 0px auto;
+}
+@media screen and (max-width: 479.98px) {
+  .pageTitle {
+    width: 479px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .pageTitle {
+    width: 767px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pageTitle {
+    width: 1600px;
+    max-width: 1600px;
+  }
 }
 .pageTitle__title {
   color: white;
@@ -499,7 +514,7 @@
   .modal__okno {
     top: 93px;
     width: 450px;
-    height: 609px;
+    height: 650px;
     left: 0px;
   }
 }
@@ -697,7 +712,7 @@
 }
 .modal__email {
   position: absolute;
-  top: 243px;
+  top: 265px;
   left: 54px;
 }
 .modal__email-input:focus + .modal__email {
@@ -711,7 +726,7 @@
 }
 .modal__telefon {
   position: absolute;
-  top: 174px;
+  top: 198px;
   left: 55px;
 }
 .modal__telefon-input:focus + .modal__telefon {
@@ -725,8 +740,18 @@
 }
 .modal__name {
   position: absolute;
-  top: 107px;
-  left: 55px;
+}
+@media screen and (max-width: 479.98px) {
+  .modal__name {
+    top: 130px;
+    left: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__name {
+    top: 107px;
+    left: 55px;
+  }
 }
 .modal__name-input:focus + .modal__name {
   fill: #2196f3;
@@ -736,9 +761,6 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: fill;
   transition-property: fill;
-}
-.modal .button--modal__send {
-  margin: 30px auto 0px;
 }
 
 @media screen and (max-width: 479.98px) {
@@ -928,6 +950,16 @@
   .article-team {
     padding: 94px 0px;
     margin: auto;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .article-team {
+    width: 479px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .article-team {
+    width: 767px;
   }
 }
 .article-team__title {
@@ -1412,6 +1444,16 @@
 @media screen and (min-width: 1200px) {
   .button--footer {
     margin-left: 21px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .button--modal__send {
+    margin: 41px auto 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button--modal__send {
+    margin: 30px auto 0px;
   }
 }
 
