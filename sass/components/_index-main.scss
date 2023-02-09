@@ -312,17 +312,6 @@
 
   ul {
     list-style: none;
-    @include mq(phone, max) {
-      flex-basis: calc(100% / 1);
-      padding: 0px 15px;
-    }
-    @include mq(phone) {
-    }
-    @include mq(desktop) {
-      display: flex;
-      margin-right: 0px;
-      padding: 0px;
-    }
   }
   &__listIcons li:not(:last-child) {
     @include mq(desktop) {
@@ -336,8 +325,24 @@
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
-    margin: 0px;
-    padding: 30px 0px 0px 0px;
+
+    @include mq(phone, max) {
+      padding: 0px 15px;
+    }
+    @include mq(phone) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 60px auto 0px;
+      padding: 0%;
+    }
+    @include mq(desktop) {
+      display: flex;
+      gap: 0px;
+      margin-right: 0px;
+      padding: 30px 0px 0px 0px;
+      margin: 0px;
+    }
   }
   &__listIcons p {
     color: #757575;
@@ -348,10 +353,14 @@
     @include mq(phone, max) {
     }
     @include mq(phone) {
+      padding: 0px;
+      margin: 0px auto;
+      width: 354px;
     }
     @include mq(desktop) {
       padding: 0px;
       margin: 0%;
+      width: 270px;
     }
   }
   &__sub-title {
@@ -391,7 +400,6 @@
 
   &__pictures {
     list-style: none;
-    display: flex;
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
@@ -402,6 +410,7 @@
       display: none;
     }
     @include mq(desktop) {
+      display: flex;
     }
   }
   &__icons {
@@ -415,6 +424,8 @@
       height: 120px;
     }
     @include mq(phone) {
+      width: 354px;
+      height: 120px;
     }
     @include mq(desktop) {
       width: 270px;
@@ -452,20 +463,17 @@
   background-color: #f5f4fa;
   @include mq(phone, max) {
     padding: 60px 0px;
+    width: 479px;
   }
   @include mq(phone) {
+    width: 768px;
   }
   @include mq(desktop) {
     padding: 94px 0px;
     margin: auto;
-  }
-  @include mq(phone, max) {
-    width: 479px;
+    width: auto;
   }
 
-  @include mq(phone) {
-    width: 767px;
-  }
   &__title {
     color: #212121;
     font-weight: 700;
@@ -479,6 +487,8 @@
     @include mq(phone) {
       font-size: 28px;
       line-height: 1.17;
+      margin-top: 45px;
+      padding-top: 60px;
     }
     @include mq(desktop) {
       font-size: 36px;
@@ -502,10 +512,14 @@
     }
     @include mq(phone) {
       margin-top: 30px;
+      width: 450px;
+      height: 622px;
     }
     @include mq(desktop) {
       margin-top: 50px;
       padding: 0px;
+      width: 270px;
+      height: 428px;
     }
   }
 
@@ -562,8 +576,8 @@
     @include mq(phone) {
     }
     @include mq(desktop) {
-      margin-top: 30px;
       padding: 0px;
+      margin: 30px auto 0px;
     }
   }
   &__job {

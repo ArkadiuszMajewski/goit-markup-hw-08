@@ -97,23 +97,26 @@
   @include mq(phone, max) {
     display: none;
   }
-  @include mq(phone) {
-  }
-  @include mq(desktop) {
-  }
 }
 .mail-phone-cont {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+
+  flex-direction: row;
 }
 
 .mail-phone--header {
   list-style: none;
   display: block;
-  display: flex;
-  margin-left: 345px;
-  padding: 0px;
+  @include mq(phone, max) {
+  }
+  @include mq(phone) {
+    margin-left: 101px;
+  }
+  @include mq(desktop) {
+    list-style: none;
+    margin-left: 345px;
+    padding: 0px;
+  }
   & a {
     padding-right: 0px;
     display: flex;
@@ -136,7 +139,10 @@
     display: none;
   }
   @include mq(phone) {
+    flex-direction: column;
   }
   @include mq(desktop) {
+    display: flex;
+    flex-direction: row;
   }
 }
