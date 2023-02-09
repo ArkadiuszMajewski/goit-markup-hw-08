@@ -21,20 +21,23 @@
       font-size: 24px;
     }
     @include mq(phone) {
+      padding-left: 15px;
+      font-size: 26px;
     }
     @include mq(desktop) {
       padding-left: 15px;
       font-size: 26px;
     }
-    &--footer {
-      @include mq(phone, max) {
-        margin: 0px auto;
-      }
-      @include mq(phone) {
-      }
-      @include mq(desktop) {
-        margin: 0%;
-      }
+  }
+  &--footer {
+    @include mq(phone, max) {
+      margin: 0px auto;
+    }
+    @include mq(phone) {
+      margin: 60px auto 0px;
+    }
+    @include mq(desktop) {
+      margin: 0%;
     }
   }
 }

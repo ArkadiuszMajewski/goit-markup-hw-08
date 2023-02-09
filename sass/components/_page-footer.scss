@@ -1,9 +1,17 @@
 .footer {
   background-color: #2f303a;
-
   display: flex;
   justify-content: center;
   margin: auto;
+  @include mq(phone, max) {
+    width: 480px;
+  }
+  @include mq(phone) {
+    width: 768px;
+  }
+  @include mq(desktop) {
+    width: auto;
+  }
   @include mq(desktop) {
     height: 252px;
     margin: 0px;
@@ -29,6 +37,11 @@
       flex-direction: column;
     }
     @include mq(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     @include mq(desktop) {
       display: flex;
@@ -67,8 +80,12 @@
       margin-top: 60px;
     }
     @include mq(phone) {
+      text-align: center;
+      margin-left: 166px;
     }
     @include mq(desktop) {
+      text-align: left;
+      margin: 0%;
     }
   }
   &__input {
@@ -76,8 +93,6 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
-    height: 50px;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
@@ -89,6 +104,18 @@
     color: #fff;
     padding-left: 20px;
     outline: none;
+    @include mq(phone, max) {
+      width: 450px;
+      height: 50px;
+    }
+    @include mq(phone) {
+      width: 450px;
+      height: 50px;
+    }
+    @include mq(desktop) {
+      width: 358px;
+      height: 50px;
+    }
   }
   &__input:focus {
     border: 1px solid white;
@@ -115,6 +142,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    @include mq(phone, max) {
+    }
+    @include mq(phone) {
+      margin: 0px 144px 60px 76px;
+    }
+    @include mq(desktop) {
+      margin: 0%;
+    }
   }
 }
 
@@ -129,6 +164,8 @@
     justify-content: center;
   }
   @include mq(phone) {
+    display: flex;
+    flex-wrap: wrap;
   }
   @include mq(desktop) {
     display: block;

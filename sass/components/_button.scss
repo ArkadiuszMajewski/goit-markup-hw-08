@@ -29,15 +29,15 @@
     align-items: center;
     text-align: center;
     padding-left: 42px;
-
     fill: white;
     @include mq(phone, max) {
       margin: 20px auto 60px;
     }
     @include mq(phone) {
+      margin: 20px auto 60px;
     }
     @include mq(desktop) {
-      margin-left: 21px;
+      margin: 0px 0px 0px 21px;
     }
   }
   &--modal__send {
@@ -45,6 +45,7 @@
       margin: 41px auto 50px;
     }
     @include mq(phone) {
+      margin: 30px auto 0px;
     }
     @include mq(desktop) {
       margin: 30px auto 0px;
