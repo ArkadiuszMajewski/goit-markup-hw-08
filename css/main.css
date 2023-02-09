@@ -422,7 +422,7 @@
   background-repeat: no-repeat;
   width: 1600px;
   height: 600px;
-  background-position: 100%;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,16 +445,19 @@
 @media screen and (max-width: 479.98px) {
   .pageTitle {
     width: 479px;
+    background-size: 1100px;
   }
 }
 @media screen and (min-width: 480px) {
   .pageTitle {
     width: 767px;
+    background-size: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .pageTitle {
     width: 1600px;
+    background-size: 1600px;
   }
 }
 .pageTitle__title {
