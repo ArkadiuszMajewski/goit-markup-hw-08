@@ -1043,6 +1043,11 @@
     line-height: 1.27;
   }
 }
+@media screen and (min-width: 480px) {
+  .article-team__person-list li:last-child {
+    margin-bottom: 30px;
+  }
+}
 .article-team__person-list li {
   background-color: #ffffff;
   display: -webkit-box;
@@ -1073,8 +1078,11 @@
 @media screen and (min-width: 480px) {
   .article-team__person-list li {
     margin-top: 30px;
-    width: 450px;
-    height: 622px;
+    width: 354px;
+    height: 536px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1085,10 +1093,9 @@
     height: 428px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .article-team__person-list figure {
-    margin: 0px;
-  }
+.article-team__person-list figure {
+  margin: 0px;
+  padding: 0%;
 }
 @media screen and (max-width: 479.98px) {
   .article-team__person-list img {
@@ -1119,6 +1126,19 @@
     padding: 0px 15px;
   }
 }
+@media screen and (min-width: 480px) {
+  .article-team__person-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0%;
+    padding: 0%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .article-team__person-list {
     display: -webkit-box;
@@ -1145,6 +1165,12 @@
     position: absolute;
     left: 120px;
     top: 490px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .article-team__person-list figcaption {
+    padding: 0px;
+    margin: 30px auto 0px;
   }
 }
 @media screen and (min-width: 1200px) {
