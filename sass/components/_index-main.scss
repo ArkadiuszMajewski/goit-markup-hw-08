@@ -375,6 +375,7 @@
     padding-top: 10px;
 
     @include mq(phone, max) {
+      margin-bottom: 28px;
     }
     @include mq(phone) {
     }

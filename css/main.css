@@ -911,6 +911,11 @@
   display: block;
   padding-top: 10px;
 }
+@media screen and (max-width: 479.98px) {
+  .article-team__job {
+    margin-bottom: 28px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .article-team__job {
     display: block;
@@ -1435,6 +1440,12 @@
   .social-links--article-team {
     position: absolute;
     bottom: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .social-links--article-team {
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {

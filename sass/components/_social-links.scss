@@ -6,6 +6,8 @@
       bottom: 24px;
     }
     @include mq(phone) {
+      padding-top: 16px;
+      padding-bottom: 24px;
     }
     @include mq(desktop) {
       padding: 16px 0px 30px 0px;
