@@ -244,6 +244,7 @@
   @include mq(phone) {
     margin: auto;
     width: auto;
+    min-width: 767px;
   }
   @include mq(desktop) {
     padding: 94px 0px;

@@ -35,11 +35,13 @@
 @media screen and (max-width: 479.98px) {
   .footer {
     width: auto;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 480px) {
   .footer {
     width: auto;
+    min-width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -735,6 +737,7 @@
   .article-team {
     margin: auto;
     width: auto;
+    min-width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {

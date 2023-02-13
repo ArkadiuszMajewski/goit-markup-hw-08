@@ -5,9 +5,11 @@
   margin: auto;
   @include mq(phone, max) {
     width: auto;
+    min-width: 480px;
   }
   @include mq(phone) {
     width: auto;
+    min-width: 767px;
   }
 
   @include mq(desktop) {
