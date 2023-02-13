@@ -1,6 +1,5 @@
 .pageTitle {
   background-repeat: no-repeat;
-  width: 1600px;
   height: 600px;
   background-position: center;
   display: flex;
@@ -30,7 +29,7 @@
     background-size: 1200px;
   }
   @include mq(desktop) {
-    width: 1600px;
+    width: auto;
     background-size: 1600px;
     max-width: 1600px;
   }
