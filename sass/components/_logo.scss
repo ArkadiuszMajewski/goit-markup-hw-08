@@ -31,7 +31,7 @@
   }
   &--footer {
     @include mq(phone, max) {
-      margin: 0px auto;
+      margin: 60px auto 0px;
     }
     @include mq(phone) {
       margin: 60px auto 0px;
