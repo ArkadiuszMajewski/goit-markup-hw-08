@@ -4,17 +4,16 @@
   justify-content: center;
   margin: auto;
   @include mq(phone, max) {
-    width: 480px;
+    width: auto;
   }
   @include mq(phone) {
     width: auto;
   }
-  @include mq(desktop) {
-    width: auto;
-  }
+
   @include mq(desktop) {
     height: 252px;
     margin: 0px auto;
+    width: auto;
   }
 
   &__address {
