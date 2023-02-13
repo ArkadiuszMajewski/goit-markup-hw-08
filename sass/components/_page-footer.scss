@@ -14,7 +14,7 @@
   }
   @include mq(desktop) {
     height: 252px;
-    margin: 0px;
+    margin: 0px auto;
   }
 
   &__address {
