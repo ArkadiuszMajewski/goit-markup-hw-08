@@ -267,6 +267,7 @@
     @include mq(desktop) {
       font-size: 36px;
       line-height: 1.27;
+      margin: 0%;
     }
   }
   &__person-list li:last-child {
