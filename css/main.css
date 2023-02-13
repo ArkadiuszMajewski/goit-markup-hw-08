@@ -1586,6 +1586,8 @@
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  width: 480px;
+  height: 796px;
 }
 
 .menu-container .menu-toggle {

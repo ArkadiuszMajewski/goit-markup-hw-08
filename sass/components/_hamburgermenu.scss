@@ -1,6 +1,7 @@
 .ham-menu {
   min-width: 320px;
   max-width: 1170px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -81,6 +82,8 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  width: 480px;
+  height: 796px;
 }
 
 .menu-container .menu-toggle {
