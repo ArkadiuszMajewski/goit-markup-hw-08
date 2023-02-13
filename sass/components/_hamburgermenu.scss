@@ -1,7 +1,6 @@
 .ham-menu {
   min-width: 320px;
   max-width: 1170px;
-
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -94,8 +93,8 @@
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   font-size: 40px;
   font-family: "Roboto";
@@ -184,7 +183,6 @@
 .mobile__line {
   stroke-width: 1px;
   stroke: rgba(33, 33, 33, 0.2);
-
   position: absolute;
   left: 123px;
   top: 726px;
