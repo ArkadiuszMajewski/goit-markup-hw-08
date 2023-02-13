@@ -76,8 +76,11 @@
   @include mq(phone, max) {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0px auto;
   }
   @include mq(phone) {
+    width: auto;
+    margin: 0px auto;
   }
   @include mq(desktop) {
     padding-top: 94px;
@@ -241,6 +244,7 @@
   }
   @include mq(phone) {
     margin: auto;
+    width: auto;
   }
   @include mq(desktop) {
     padding: 94px 0px;

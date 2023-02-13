@@ -7,10 +7,10 @@
     width: 480px;
   }
   @include mq(phone) {
-    width: 480px;
+    width: auto;
   }
   @include mq(desktop) {
-    width: 768px;
+    width: auto;
   }
   @include mq(desktop) {
     height: 252px;

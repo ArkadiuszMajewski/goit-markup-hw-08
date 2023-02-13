@@ -39,12 +39,12 @@
 }
 @media screen and (min-width: 480px) {
   .footer {
-    width: 480px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 768px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -316,7 +316,7 @@
 @media screen and (min-width: 1200px) {
   .header {
     width: 1200px;
-    height: 60px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -520,6 +520,13 @@
   .article-main {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0px auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .article-main {
+    width: auto;
+    margin: 0px auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -732,6 +739,7 @@
 @media screen and (min-width: 480px) {
   .article-team {
     margin: auto;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
