@@ -70,7 +70,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 100%;
   padding: 32px;
   background-color: #ffffff;
@@ -81,6 +81,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  height: calc(100%);
 }
 
 .menu-container .menu-toggle {
