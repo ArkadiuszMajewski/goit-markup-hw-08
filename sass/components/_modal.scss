@@ -57,7 +57,10 @@
     right: 0px;
     top: 0px;
     cursor: pointer;
+  }
+  &__xButton svg {
     fill: black;
+    color: black;
   }
   &__okno textarea {
     resize: none;
