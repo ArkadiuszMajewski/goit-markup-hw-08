@@ -1829,6 +1829,8 @@
 .modal__xButton svg {
   fill: black;
   color: black;
+  width: 30px;
+  height: 30px;
 }
 .modal__okno textarea {
   resize: none;
