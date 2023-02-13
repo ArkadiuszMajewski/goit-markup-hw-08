@@ -237,10 +237,9 @@
   background-color: #f5f4fa;
   @include mq(phone, max) {
     padding: 60px 0px;
-    width: auto;
+    width: 480px;
   }
   @include mq(phone) {
-    width: auto;
     margin: auto;
   }
   @include mq(desktop) {
