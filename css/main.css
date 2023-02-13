@@ -1293,6 +1293,7 @@
 
 .logo-link {
   text-decoration: none;
+  width: 150px;
 }
 
 .logo {
@@ -1303,6 +1304,8 @@
   line-height: 1.38;
   color: var(--brand-color);
   text-decoration: none;
+  margin-right: 0%;
+  display: block;
 }
 .logo__black {
   color: #212121;
@@ -1315,6 +1318,8 @@
     padding: 15px 16px;
     font-size: 24px;
     margin: 0%;
+    width: 150px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 480px) {
