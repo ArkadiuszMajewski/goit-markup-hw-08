@@ -1407,7 +1407,11 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-right: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .mail-phone--header li {
+    padding-right: 30px;
+  }
 }
 .mail-phone--header li:last-child {
   padding: 0px;

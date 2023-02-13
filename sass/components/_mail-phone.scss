@@ -55,7 +55,10 @@
     }
     & li {
       display: inline-flex;
-      padding-right: 30px;
+
+      @include mq(desktop) {
+        padding-right: 30px;
+      }
     }
     & li:last-child {
       padding: 0px;
