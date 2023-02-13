@@ -449,8 +449,10 @@
 }
 @media screen and (min-width: 480px) {
   .pageTitle {
-    width: 767px;
+    width: auto;
+    min-width: 767px;
     background-size: 1200px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1729,6 +1731,7 @@
 
 .mobile__x:hover {
   fill: #2196f3;
+  margin-right: auto;
 }
 
 .modal {

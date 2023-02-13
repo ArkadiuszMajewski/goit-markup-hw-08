@@ -5,6 +5,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
   @include mq(phone, max) {
     display: block;
   }
@@ -205,4 +206,5 @@
 }
 .mobile__x:hover {
   fill: #2196f3;
+  margin-right: auto;
 }
