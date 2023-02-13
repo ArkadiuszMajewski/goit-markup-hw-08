@@ -1823,6 +1823,8 @@
   right: 0px;
   top: 0px;
   cursor: pointer;
+  fill: black;
+  color: black;
 }
 .modal__xButton svg {
   fill: black;
