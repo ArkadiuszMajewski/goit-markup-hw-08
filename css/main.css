@@ -1822,6 +1822,8 @@
   position: absolute;
   right: 0px;
   top: 0px;
+  -webkit-text-stroke: 1px black;
+  overflow: visible;
   cursor: pointer;
   fill: black;
   color: black;
